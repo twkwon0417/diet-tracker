@@ -1,0 +1,4581 @@
+{
+ "version": "2026.11",
+ "unit": "모든 영양성분은 가식부 100g 기준(baseAmount)입니다.",
+ "disclaimer": "공공 영양성분 데이터베이스를 참고한 대표 추정값입니다. 조리법·재료·제품에 따라 실제 값은 달라질 수 있습니다.",
+ "categories": [
+  "밥·곡류",
+  "한식",
+  "분식",
+  "육류",
+  "해산물",
+  "면류",
+  "패스트푸드",
+  "채소·과일",
+  "유제품·계란",
+  "빵·간식",
+  "음료",
+  "운동·건강식"
+ ],
+ "foods": [
+  {
+   "id": "f001",
+   "name": "흰쌀밥",
+   "aliases": [
+    "쌀밥",
+    "밥",
+    "공기밥",
+    "백미밥"
+   ],
+   "category": "밥·곡류",
+   "baseAmount": 100,
+   "kcal": 145,
+   "carbs": 31.7,
+   "protein": 2.7,
+   "fat": 0.3,
+   "servingSize": 210,
+   "servingLabel": "1공기",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f002",
+   "name": "현미밥",
+   "aliases": [
+    "현미"
+   ],
+   "category": "밥·곡류",
+   "baseAmount": 100,
+   "kcal": 150,
+   "carbs": 32.5,
+   "protein": 3.0,
+   "fat": 0.9,
+   "servingSize": 210,
+   "servingLabel": "1공기",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f003",
+   "name": "잡곡밥",
+   "aliases": [
+    "오곡밥",
+    "혼합곡밥"
+   ],
+   "category": "밥·곡류",
+   "baseAmount": 100,
+   "kcal": 148,
+   "carbs": 31.5,
+   "protein": 3.4,
+   "fat": 0.7,
+   "servingSize": 210,
+   "servingLabel": "1공기",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f004",
+   "name": "보리밥",
+   "aliases": [
+    "보리"
+   ],
+   "category": "밥·곡류",
+   "baseAmount": 100,
+   "kcal": 140,
+   "carbs": 30.5,
+   "protein": 2.9,
+   "fat": 0.5,
+   "servingSize": 210,
+   "servingLabel": "1공기",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f005",
+   "name": "흑미밥",
+   "aliases": [
+    "흑미"
+   ],
+   "category": "밥·곡류",
+   "baseAmount": 100,
+   "kcal": 150,
+   "carbs": 32.0,
+   "protein": 3.2,
+   "fat": 0.8,
+   "servingSize": 210,
+   "servingLabel": "1공기",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f006",
+   "name": "오트밀(건조)",
+   "aliases": [
+    "오트밀",
+    "귀리",
+    "오트",
+    "퀵오트"
+   ],
+   "category": "밥·곡류",
+   "baseAmount": 100,
+   "kcal": 380,
+   "carbs": 66.0,
+   "protein": 13.5,
+   "fat": 7.0,
+   "servingSize": 40,
+   "servingLabel": "1회(40g)",
+   "source": "USDA FoodData Central 참고"
+  },
+  {
+   "id": "f007",
+   "name": "오트밀죽(물 조리)",
+   "aliases": [
+    "오트밀죽",
+    "포리지"
+   ],
+   "category": "밥·곡류",
+   "baseAmount": 100,
+   "kcal": 71,
+   "carbs": 12.0,
+   "protein": 2.5,
+   "fat": 1.5,
+   "servingSize": 250,
+   "servingLabel": "1그릇",
+   "source": "USDA FoodData Central 참고"
+  },
+  {
+   "id": "f008",
+   "name": "누룽지(건조)",
+   "aliases": [
+    "누룽지"
+   ],
+   "category": "밥·곡류",
+   "baseAmount": 100,
+   "kcal": 380,
+   "carbs": 84.0,
+   "protein": 7.0,
+   "fat": 1.0,
+   "servingSize": 50,
+   "servingLabel": "1회",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f009",
+   "name": "흰죽",
+   "aliases": [
+    "쌀죽",
+    "죽"
+   ],
+   "category": "밥·곡류",
+   "baseAmount": 100,
+   "kcal": 50,
+   "carbs": 11.0,
+   "protein": 0.9,
+   "fat": 0.1,
+   "servingSize": 300,
+   "servingLabel": "1그릇",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f010",
+   "name": "전복죽",
+   "aliases": [
+    "죽"
+   ],
+   "category": "밥·곡류",
+   "baseAmount": 100,
+   "kcal": 60,
+   "carbs": 10.0,
+   "protein": 2.8,
+   "fat": 0.9,
+   "servingSize": 400,
+   "servingLabel": "1그릇",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f011",
+   "name": "호박죽",
+   "aliases": [
+    "단호박죽",
+    "죽"
+   ],
+   "category": "밥·곡류",
+   "baseAmount": 100,
+   "kcal": 70,
+   "carbs": 15.0,
+   "protein": 1.2,
+   "fat": 0.4,
+   "servingSize": 300,
+   "servingLabel": "1그릇",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f012",
+   "name": "콘플레이크",
+   "aliases": [
+    "시리얼",
+    "씨리얼",
+    "콘프레이크",
+    "콘푸레이크"
+   ],
+   "category": "밥·곡류",
+   "baseAmount": 100,
+   "kcal": 380,
+   "carbs": 84.0,
+   "protein": 7.0,
+   "fat": 0.9,
+   "servingSize": 30,
+   "servingLabel": "1회(30g)",
+   "source": "USDA FoodData Central 참고"
+  },
+  {
+   "id": "f013",
+   "name": "그래놀라",
+   "aliases": [
+    "시리얼",
+    "그라놀라",
+    "뮤즐리"
+   ],
+   "category": "밥·곡류",
+   "baseAmount": 100,
+   "kcal": 450,
+   "carbs": 64.0,
+   "protein": 10.0,
+   "fat": 17.0,
+   "servingSize": 40,
+   "servingLabel": "1회(40g)",
+   "source": "USDA FoodData Central 참고"
+  },
+  {
+   "id": "f014",
+   "name": "가래떡",
+   "aliases": [
+    "떡",
+    "떡국떡"
+   ],
+   "category": "밥·곡류",
+   "baseAmount": 100,
+   "kcal": 216,
+   "carbs": 49.0,
+   "protein": 3.8,
+   "fat": 0.4,
+   "servingSize": 100,
+   "servingLabel": "1회",
+   "source": "농촌진흥청 국가표준식품성분표 참고"
+  },
+  {
+   "id": "f015",
+   "name": "인절미",
+   "aliases": [
+    "떡"
+   ],
+   "category": "밥·곡류",
+   "baseAmount": 100,
+   "kcal": 230,
+   "carbs": 46.0,
+   "protein": 5.0,
+   "fat": 2.5,
+   "servingSize": 100,
+   "servingLabel": "1회",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f016",
+   "name": "백설기",
+   "aliases": [
+    "떡",
+    "설기"
+   ],
+   "category": "밥·곡류",
+   "baseAmount": 100,
+   "kcal": 230,
+   "carbs": 51.0,
+   "protein": 3.8,
+   "fat": 0.5,
+   "servingSize": 100,
+   "servingLabel": "1조각",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f017",
+   "name": "퀴노아(익힌 것)",
+   "aliases": [
+    "퀴노아",
+    "퀴노아밥",
+    "키노아"
+   ],
+   "category": "밥·곡류",
+   "baseAmount": 100,
+   "kcal": 120,
+   "carbs": 21.3,
+   "protein": 4.4,
+   "fat": 1.9,
+   "servingSize": 150,
+   "servingLabel": "1회",
+   "source": "USDA FoodData Central 참고"
+  },
+  {
+   "id": "f018",
+   "name": "떡국",
+   "aliases": [
+    "떡만둣국"
+   ],
+   "category": "밥·곡류",
+   "baseAmount": 100,
+   "kcal": 115,
+   "carbs": 22.0,
+   "protein": 4.0,
+   "fat": 1.2,
+   "servingSize": 500,
+   "servingLabel": "1그릇",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f019",
+   "name": "김치찌개",
+   "aliases": [
+    "찌개",
+    "돼지고기김치찌개"
+   ],
+   "category": "한식",
+   "baseAmount": 100,
+   "kcal": 50,
+   "carbs": 3.5,
+   "protein": 3.8,
+   "fat": 2.6,
+   "servingSize": 400,
+   "servingLabel": "1인분",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f020",
+   "name": "된장찌개",
+   "aliases": [
+    "찌개",
+    "된장국"
+   ],
+   "category": "한식",
+   "baseAmount": 100,
+   "kcal": 40,
+   "carbs": 3.5,
+   "protein": 3.0,
+   "fat": 1.6,
+   "servingSize": 400,
+   "servingLabel": "1인분",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f021",
+   "name": "순두부찌개",
+   "aliases": [
+    "찌개",
+    "순두부"
+   ],
+   "category": "한식",
+   "baseAmount": 100,
+   "kcal": 50,
+   "carbs": 2.5,
+   "protein": 4.0,
+   "fat": 2.8,
+   "servingSize": 400,
+   "servingLabel": "1인분",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f022",
+   "name": "부대찌개",
+   "aliases": [
+    "찌개"
+   ],
+   "category": "한식",
+   "baseAmount": 100,
+   "kcal": 95,
+   "carbs": 6.5,
+   "protein": 5.5,
+   "fat": 5.2,
+   "servingSize": 400,
+   "servingLabel": "1인분",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f023",
+   "name": "청국장찌개",
+   "aliases": [
+    "청국장",
+    "찌개"
+   ],
+   "category": "한식",
+   "baseAmount": 100,
+   "kcal": 55,
+   "carbs": 4.0,
+   "protein": 5.0,
+   "fat": 2.2,
+   "servingSize": 400,
+   "servingLabel": "1인분",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f024",
+   "name": "동태찌개",
+   "aliases": [
+    "동태탕",
+    "생태찌개",
+    "찌개"
+   ],
+   "category": "한식",
+   "baseAmount": 100,
+   "kcal": 40,
+   "carbs": 2.0,
+   "protein": 5.5,
+   "fat": 1.1,
+   "servingSize": 400,
+   "servingLabel": "1인분",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f025",
+   "name": "미역국",
+   "aliases": [
+    "소고기미역국"
+   ],
+   "category": "한식",
+   "baseAmount": 100,
+   "kcal": 25,
+   "carbs": 1.2,
+   "protein": 1.8,
+   "fat": 1.4,
+   "servingSize": 350,
+   "servingLabel": "1그릇",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f026",
+   "name": "소고기무국",
+   "aliases": [
+    "무국",
+    "쇠고기무국"
+   ],
+   "category": "한식",
+   "baseAmount": 100,
+   "kcal": 30,
+   "carbs": 1.5,
+   "protein": 3.0,
+   "fat": 1.3,
+   "servingSize": 350,
+   "servingLabel": "1그릇",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f027",
+   "name": "콩나물국",
+   "aliases": [
+    "콩나물해장국"
+   ],
+   "category": "한식",
+   "baseAmount": 100,
+   "kcal": 15,
+   "carbs": 1.5,
+   "protein": 1.5,
+   "fat": 0.4,
+   "servingSize": 350,
+   "servingLabel": "1그릇",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f028",
+   "name": "북엇국",
+   "aliases": [
+    "북어국",
+    "황태국",
+    "황태해장국"
+   ],
+   "category": "한식",
+   "baseAmount": 100,
+   "kcal": 30,
+   "carbs": 1.0,
+   "protein": 4.0,
+   "fat": 1.1,
+   "servingSize": 350,
+   "servingLabel": "1그릇",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f029",
+   "name": "육개장",
+   "aliases": [
+    "육계장",
+    "국"
+   ],
+   "category": "한식",
+   "baseAmount": 100,
+   "kcal": 45,
+   "carbs": 2.5,
+   "protein": 4.5,
+   "fat": 1.9,
+   "servingSize": 500,
+   "servingLabel": "1그릇",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f030",
+   "name": "갈비탕",
+   "aliases": [
+    "국",
+    "탕"
+   ],
+   "category": "한식",
+   "baseAmount": 100,
+   "kcal": 70,
+   "carbs": 2.0,
+   "protein": 7.0,
+   "fat": 3.8,
+   "servingSize": 600,
+   "servingLabel": "1그릇",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f031",
+   "name": "설렁탕",
+   "aliases": [
+    "곰탕",
+    "국",
+    "탕"
+   ],
+   "category": "한식",
+   "baseAmount": 100,
+   "kcal": 45,
+   "carbs": 1.0,
+   "protein": 5.0,
+   "fat": 2.3,
+   "servingSize": 600,
+   "servingLabel": "1그릇(밥 제외)",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f032",
+   "name": "삼계탕",
+   "aliases": [
+    "닭백숙",
+    "백숙",
+    "탕"
+   ],
+   "category": "한식",
+   "baseAmount": 100,
+   "kcal": 95,
+   "carbs": 3.5,
+   "protein": 10.0,
+   "fat": 4.5,
+   "servingSize": 800,
+   "servingLabel": "1그릇",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f033",
+   "name": "감자탕",
+   "aliases": [
+    "뼈해장국",
+    "해장국"
+   ],
+   "category": "한식",
+   "baseAmount": 100,
+   "kcal": 85,
+   "carbs": 3.5,
+   "protein": 7.5,
+   "fat": 4.5,
+   "servingSize": 600,
+   "servingLabel": "1인분",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f034",
+   "name": "순댓국",
+   "aliases": [
+    "순대국",
+    "국밥"
+   ],
+   "category": "한식",
+   "baseAmount": 100,
+   "kcal": 60,
+   "carbs": 3.0,
+   "protein": 5.5,
+   "fat": 2.8,
+   "servingSize": 600,
+   "servingLabel": "1그릇(밥 제외)",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f035",
+   "name": "만둣국",
+   "aliases": [
+    "만두국"
+   ],
+   "category": "한식",
+   "baseAmount": 100,
+   "kcal": 70,
+   "carbs": 9.0,
+   "protein": 4.0,
+   "fat": 2.0,
+   "servingSize": 600,
+   "servingLabel": "1그릇",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f036",
+   "name": "제육볶음",
+   "aliases": [
+    "돼지고기볶음",
+    "제육",
+    "돼지불고기"
+   ],
+   "category": "한식",
+   "baseAmount": 100,
+   "kcal": 200,
+   "carbs": 8.0,
+   "protein": 14.0,
+   "fat": 12.5,
+   "servingSize": 200,
+   "servingLabel": "1인분",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f037",
+   "name": "불고기",
+   "aliases": [
+    "소불고기",
+    "쇠고기불고기"
+   ],
+   "category": "한식",
+   "baseAmount": 100,
+   "kcal": 180,
+   "carbs": 9.0,
+   "protein": 14.0,
+   "fat": 9.8,
+   "servingSize": 200,
+   "servingLabel": "1인분",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f038",
+   "name": "닭갈비",
+   "aliases": [
+    "춘천닭갈비"
+   ],
+   "category": "한식",
+   "baseAmount": 100,
+   "kcal": 155,
+   "carbs": 9.0,
+   "protein": 14.0,
+   "fat": 7.0,
+   "servingSize": 300,
+   "servingLabel": "1인분",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f039",
+   "name": "닭볶음탕",
+   "aliases": [
+    "닭도리탕"
+   ],
+   "category": "한식",
+   "baseAmount": 100,
+   "kcal": 120,
+   "carbs": 6.0,
+   "protein": 11.0,
+   "fat": 5.8,
+   "servingSize": 400,
+   "servingLabel": "1인분",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f040",
+   "name": "찜닭",
+   "aliases": [
+    "안동찜닭"
+   ],
+   "category": "한식",
+   "baseAmount": 100,
+   "kcal": 140,
+   "carbs": 13.0,
+   "protein": 11.0,
+   "fat": 5.0,
+   "servingSize": 400,
+   "servingLabel": "1인분",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f041",
+   "name": "소갈비찜",
+   "aliases": [
+    "갈비찜"
+   ],
+   "category": "한식",
+   "baseAmount": 100,
+   "kcal": 220,
+   "carbs": 9.0,
+   "protein": 15.0,
+   "fat": 14.0,
+   "servingSize": 250,
+   "servingLabel": "1인분",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f042",
+   "name": "돼지갈비(양념구이)",
+   "aliases": [
+    "돼지갈비",
+    "양념갈비",
+    "갈비"
+   ],
+   "category": "한식",
+   "baseAmount": 100,
+   "kcal": 260,
+   "carbs": 9.0,
+   "protein": 15.0,
+   "fat": 18.0,
+   "servingSize": 250,
+   "servingLabel": "1인분",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f043",
+   "name": "LA갈비(구이)",
+   "aliases": [
+    "LA갈비",
+    "엘에이갈비",
+    "갈비"
+   ],
+   "category": "한식",
+   "baseAmount": 100,
+   "kcal": 280,
+   "carbs": 7.0,
+   "protein": 16.0,
+   "fat": 21.0,
+   "servingSize": 250,
+   "servingLabel": "1인분",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f044",
+   "name": "떡갈비",
+   "aliases": [
+    "떡갈비구이"
+   ],
+   "category": "한식",
+   "baseAmount": 100,
+   "kcal": 250,
+   "carbs": 12.0,
+   "protein": 15.0,
+   "fat": 16.0,
+   "servingSize": 100,
+   "servingLabel": "1개",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f045",
+   "name": "수육(돼지고기)",
+   "aliases": [
+    "보쌈",
+    "수육",
+    "돼지수육"
+   ],
+   "category": "한식",
+   "baseAmount": 100,
+   "kcal": 280,
+   "carbs": 0.5,
+   "protein": 20.0,
+   "fat": 22.0,
+   "servingSize": 200,
+   "servingLabel": "1인분",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f046",
+   "name": "족발",
+   "aliases": [],
+   "category": "한식",
+   "baseAmount": 100,
+   "kcal": 230,
+   "carbs": 2.5,
+   "protein": 23.0,
+   "fat": 14.0,
+   "servingSize": 200,
+   "servingLabel": "1인분",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f047",
+   "name": "비빔밥",
+   "aliases": [
+    "돌솥비빔밥",
+    "산채비빔밥"
+   ],
+   "category": "한식",
+   "baseAmount": 100,
+   "kcal": 150,
+   "carbs": 24.0,
+   "protein": 5.0,
+   "fat": 3.8,
+   "servingSize": 450,
+   "servingLabel": "1그릇",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f048",
+   "name": "김치볶음밥",
+   "aliases": [
+    "볶음밥"
+   ],
+   "category": "한식",
+   "baseAmount": 100,
+   "kcal": 170,
+   "carbs": 26.0,
+   "protein": 4.5,
+   "fat": 5.5,
+   "servingSize": 350,
+   "servingLabel": "1그릇",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f049",
+   "name": "볶음밥",
+   "aliases": [
+    "새우볶음밥",
+    "계란볶음밥",
+    "달걀볶음밥"
+   ],
+   "category": "한식",
+   "baseAmount": 100,
+   "kcal": 180,
+   "carbs": 27.0,
+   "protein": 5.0,
+   "fat": 6.0,
+   "servingSize": 350,
+   "servingLabel": "1그릇",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f050",
+   "name": "오므라이스",
+   "aliases": [
+    "오무라이스"
+   ],
+   "category": "한식",
+   "baseAmount": 100,
+   "kcal": 160,
+   "carbs": 22.0,
+   "protein": 5.5,
+   "fat": 5.6,
+   "servingSize": 400,
+   "servingLabel": "1그릇",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f051",
+   "name": "카레라이스",
+   "aliases": [
+    "카레",
+    "커리"
+   ],
+   "category": "한식",
+   "baseAmount": 100,
+   "kcal": 130,
+   "carbs": 21.0,
+   "protein": 3.2,
+   "fat": 3.6,
+   "servingSize": 450,
+   "servingLabel": "1그릇",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f052",
+   "name": "제육덮밥",
+   "aliases": [
+    "덮밥"
+   ],
+   "category": "한식",
+   "baseAmount": 100,
+   "kcal": 170,
+   "carbs": 23.0,
+   "protein": 7.0,
+   "fat": 5.6,
+   "servingSize": 450,
+   "servingLabel": "1그릇",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f053",
+   "name": "낙지볶음",
+   "aliases": [
+    "낙지"
+   ],
+   "category": "한식",
+   "baseAmount": 100,
+   "kcal": 90,
+   "carbs": 8.0,
+   "protein": 9.0,
+   "fat": 2.5,
+   "servingSize": 250,
+   "servingLabel": "1인분",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f054",
+   "name": "오징어볶음",
+   "aliases": [
+    "반찬"
+   ],
+   "category": "한식",
+   "baseAmount": 100,
+   "kcal": 110,
+   "carbs": 8.0,
+   "protein": 12.0,
+   "fat": 3.3,
+   "servingSize": 250,
+   "servingLabel": "1인분",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f055",
+   "name": "김치전",
+   "aliases": [
+    "부침개",
+    "전"
+   ],
+   "category": "한식",
+   "baseAmount": 100,
+   "kcal": 190,
+   "carbs": 22.0,
+   "protein": 4.0,
+   "fat": 9.5,
+   "servingSize": 150,
+   "servingLabel": "1장",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f056",
+   "name": "해물파전",
+   "aliases": [
+    "파전",
+    "부침개",
+    "전"
+   ],
+   "category": "한식",
+   "baseAmount": 100,
+   "kcal": 200,
+   "carbs": 22.0,
+   "protein": 7.0,
+   "fat": 9.5,
+   "servingSize": 200,
+   "servingLabel": "1장",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f057",
+   "name": "동그랑땡",
+   "aliases": [
+    "육원전",
+    "전"
+   ],
+   "category": "한식",
+   "baseAmount": 100,
+   "kcal": 230,
+   "carbs": 12.0,
+   "protein": 12.0,
+   "fat": 15.0,
+   "servingSize": 100,
+   "servingLabel": "5개",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f058",
+   "name": "계란말이",
+   "aliases": [
+    "달걀말이",
+    "반찬"
+   ],
+   "category": "한식",
+   "baseAmount": 100,
+   "kcal": 160,
+   "carbs": 2.0,
+   "protein": 11.0,
+   "fat": 12.0,
+   "servingSize": 100,
+   "servingLabel": "1인분",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f059",
+   "name": "계란찜",
+   "aliases": [
+    "달걀찜",
+    "뚝배기계란찜"
+   ],
+   "category": "한식",
+   "baseAmount": 100,
+   "kcal": 80,
+   "carbs": 1.2,
+   "protein": 6.5,
+   "fat": 5.4,
+   "servingSize": 150,
+   "servingLabel": "1인분",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f060",
+   "name": "잡채",
+   "aliases": [
+    "당면"
+   ],
+   "category": "한식",
+   "baseAmount": 100,
+   "kcal": 160,
+   "carbs": 25.0,
+   "protein": 3.5,
+   "fat": 5.2,
+   "servingSize": 150,
+   "servingLabel": "1인분",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f061",
+   "name": "두부부침",
+   "aliases": [
+    "두부구이",
+    "두부전"
+   ],
+   "category": "한식",
+   "baseAmount": 100,
+   "kcal": 165,
+   "carbs": 3.0,
+   "protein": 11.0,
+   "fat": 12.0,
+   "servingSize": 100,
+   "servingLabel": "1인분",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f062",
+   "name": "두부조림",
+   "aliases": [
+    "두부반찬",
+    "반찬"
+   ],
+   "category": "한식",
+   "baseAmount": 100,
+   "kcal": 120,
+   "carbs": 5.0,
+   "protein": 9.0,
+   "fat": 7.3,
+   "servingSize": 100,
+   "servingLabel": "1인분",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f063",
+   "name": "배추김치",
+   "aliases": [
+    "김치",
+    "포기김치"
+   ],
+   "category": "한식",
+   "baseAmount": 100,
+   "kcal": 22,
+   "carbs": 3.4,
+   "protein": 1.6,
+   "fat": 0.4,
+   "servingSize": 50,
+   "servingLabel": "1접시",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f064",
+   "name": "깍두기",
+   "aliases": [
+    "김치",
+    "무김치",
+    "깍뚜기"
+   ],
+   "category": "한식",
+   "baseAmount": 100,
+   "kcal": 30,
+   "carbs": 6.0,
+   "protein": 1.3,
+   "fat": 0.3,
+   "servingSize": 50,
+   "servingLabel": "1접시",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f065",
+   "name": "시금치나물",
+   "aliases": [
+    "시금치무침",
+    "나물"
+   ],
+   "category": "한식",
+   "baseAmount": 100,
+   "kcal": 50,
+   "carbs": 4.0,
+   "protein": 3.0,
+   "fat": 2.8,
+   "servingSize": 70,
+   "servingLabel": "1접시",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f066",
+   "name": "콩나물무침",
+   "aliases": [
+    "콩나물",
+    "나물"
+   ],
+   "category": "한식",
+   "baseAmount": 100,
+   "kcal": 45,
+   "carbs": 3.5,
+   "protein": 3.0,
+   "fat": 2.3,
+   "servingSize": 70,
+   "servingLabel": "1접시",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f067",
+   "name": "멸치볶음",
+   "aliases": [
+    "멸치",
+    "반찬"
+   ],
+   "category": "한식",
+   "baseAmount": 100,
+   "kcal": 330,
+   "carbs": 30.0,
+   "protein": 32.0,
+   "fat": 9.0,
+   "servingSize": 20,
+   "servingLabel": "1접시",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f068",
+   "name": "소고기장조림",
+   "aliases": [
+    "장조림",
+    "반찬"
+   ],
+   "category": "한식",
+   "baseAmount": 100,
+   "kcal": 150,
+   "carbs": 6.0,
+   "protein": 22.0,
+   "fat": 4.0,
+   "servingSize": 50,
+   "servingLabel": "1접시",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f069",
+   "name": "감자조림",
+   "aliases": [
+    "감자반찬",
+    "반찬"
+   ],
+   "category": "한식",
+   "baseAmount": 100,
+   "kcal": 100,
+   "carbs": 19.0,
+   "protein": 2.0,
+   "fat": 1.8,
+   "servingSize": 80,
+   "servingLabel": "1접시",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f070",
+   "name": "어묵볶음",
+   "aliases": [
+    "오뎅볶음",
+    "반찬"
+   ],
+   "category": "한식",
+   "baseAmount": 100,
+   "kcal": 150,
+   "carbs": 15.0,
+   "protein": 8.0,
+   "fat": 6.5,
+   "servingSize": 70,
+   "servingLabel": "1접시",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f071",
+   "name": "도토리묵",
+   "aliases": [
+    "묵",
+    "묵무침"
+   ],
+   "category": "한식",
+   "baseAmount": 100,
+   "kcal": 43,
+   "carbs": 10.0,
+   "protein": 0.3,
+   "fat": 0.1,
+   "servingSize": 150,
+   "servingLabel": "1접시",
+   "source": "농촌진흥청 국가표준식품성분표 참고"
+  },
+  {
+   "id": "f072",
+   "name": "콩국수",
+   "aliases": [
+    "콩국"
+   ],
+   "category": "한식",
+   "baseAmount": 100,
+   "kcal": 100,
+   "carbs": 13.0,
+   "protein": 5.5,
+   "fat": 3.0,
+   "servingSize": 600,
+   "servingLabel": "1그릇",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f073",
+   "name": "떡볶이",
+   "aliases": [
+    "떡뽁이",
+    "떡볶기",
+    "떡복이",
+    "떡뽂이"
+   ],
+   "category": "분식",
+   "baseAmount": 100,
+   "kcal": 160,
+   "carbs": 33.0,
+   "protein": 3.5,
+   "fat": 1.8,
+   "servingSize": 300,
+   "servingLabel": "1인분",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f074",
+   "name": "라볶이",
+   "aliases": [
+    "라뽁이"
+   ],
+   "category": "분식",
+   "baseAmount": 100,
+   "kcal": 150,
+   "carbs": 27.0,
+   "protein": 4.0,
+   "fat": 3.0,
+   "servingSize": 350,
+   "servingLabel": "1인분",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f075",
+   "name": "김밥",
+   "aliases": [
+    "야채김밥",
+    "기본김밥"
+   ],
+   "category": "분식",
+   "baseAmount": 100,
+   "kcal": 160,
+   "carbs": 27.0,
+   "protein": 4.8,
+   "fat": 3.6,
+   "servingSize": 230,
+   "servingLabel": "1줄",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f076",
+   "name": "참치김밥",
+   "aliases": [
+    "김밥",
+    "참치마요김밥"
+   ],
+   "category": "분식",
+   "baseAmount": 100,
+   "kcal": 185,
+   "carbs": 25.0,
+   "protein": 6.5,
+   "fat": 6.5,
+   "servingSize": 250,
+   "servingLabel": "1줄",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f077",
+   "name": "치즈김밥",
+   "aliases": [
+    "김밥"
+   ],
+   "category": "분식",
+   "baseAmount": 100,
+   "kcal": 180,
+   "carbs": 25.0,
+   "protein": 6.5,
+   "fat": 6.0,
+   "servingSize": 250,
+   "servingLabel": "1줄",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f078",
+   "name": "순대",
+   "aliases": [
+    "찹쌀순대"
+   ],
+   "category": "분식",
+   "baseAmount": 100,
+   "kcal": 182,
+   "carbs": 25.0,
+   "protein": 8.0,
+   "fat": 5.5,
+   "servingSize": 200,
+   "servingLabel": "1인분",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f079",
+   "name": "오징어튀김",
+   "aliases": [
+    "튀김"
+   ],
+   "category": "분식",
+   "baseAmount": 100,
+   "kcal": 260,
+   "carbs": 22.0,
+   "protein": 9.0,
+   "fat": 15.0,
+   "servingSize": 100,
+   "servingLabel": "3개",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f080",
+   "name": "야채튀김",
+   "aliases": [
+    "튀김"
+   ],
+   "category": "분식",
+   "baseAmount": 100,
+   "kcal": 280,
+   "carbs": 30.0,
+   "protein": 4.0,
+   "fat": 16.0,
+   "servingSize": 100,
+   "servingLabel": "2개",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f081",
+   "name": "김말이튀김",
+   "aliases": [
+    "김말이",
+    "튀김"
+   ],
+   "category": "분식",
+   "baseAmount": 100,
+   "kcal": 270,
+   "carbs": 32.0,
+   "protein": 4.0,
+   "fat": 14.0,
+   "servingSize": 100,
+   "servingLabel": "4개",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f082",
+   "name": "고구마튀김",
+   "aliases": [
+    "튀김"
+   ],
+   "category": "분식",
+   "baseAmount": 100,
+   "kcal": 250,
+   "carbs": 35.0,
+   "protein": 2.0,
+   "fat": 11.5,
+   "servingSize": 100,
+   "servingLabel": "4개",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f083",
+   "name": "군만두",
+   "aliases": [
+    "만두",
+    "튀김만두"
+   ],
+   "category": "분식",
+   "baseAmount": 100,
+   "kcal": 250,
+   "carbs": 25.0,
+   "protein": 9.0,
+   "fat": 12.5,
+   "servingSize": 150,
+   "servingLabel": "6개",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f084",
+   "name": "고기만두(찐 것)",
+   "aliases": [
+    "만두",
+    "찐만두",
+    "고기만두"
+   ],
+   "category": "분식",
+   "baseAmount": 100,
+   "kcal": 200,
+   "carbs": 24.0,
+   "protein": 8.5,
+   "fat": 7.5,
+   "servingSize": 150,
+   "servingLabel": "5개",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f085",
+   "name": "어묵(사각어묵)",
+   "aliases": [
+    "오뎅",
+    "어묵탕"
+   ],
+   "category": "분식",
+   "baseAmount": 100,
+   "kcal": 140,
+   "carbs": 14.0,
+   "protein": 10.0,
+   "fat": 5.0,
+   "servingSize": 100,
+   "servingLabel": "2장",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(가공식품) 대표값 참고"
+  },
+  {
+   "id": "f086",
+   "name": "쫄면",
+   "aliases": [
+    "비빔쫄면"
+   ],
+   "category": "분식",
+   "baseAmount": 100,
+   "kcal": 165,
+   "carbs": 32.0,
+   "protein": 4.5,
+   "fat": 2.0,
+   "servingSize": 400,
+   "servingLabel": "1그릇",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f087",
+   "name": "돈가스",
+   "aliases": [
+    "돈까스",
+    "돈카츠",
+    "돈까쓰"
+   ],
+   "category": "분식",
+   "baseAmount": 100,
+   "kcal": 270,
+   "carbs": 18.0,
+   "protein": 14.0,
+   "fat": 16.0,
+   "servingSize": 200,
+   "servingLabel": "1인분",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f088",
+   "name": "핫도그(분식)",
+   "aliases": [
+    "핫도그",
+    "콘도그"
+   ],
+   "category": "분식",
+   "baseAmount": 100,
+   "kcal": 280,
+   "carbs": 30.0,
+   "protein": 8.0,
+   "fat": 14.0,
+   "servingSize": 120,
+   "servingLabel": "1개",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f089",
+   "name": "길거리토스트",
+   "aliases": [
+    "토스트",
+    "계란토스트",
+    "달걀토스트"
+   ],
+   "category": "분식",
+   "baseAmount": 100,
+   "kcal": 250,
+   "carbs": 28.0,
+   "protein": 8.0,
+   "fat": 12.0,
+   "servingSize": 200,
+   "servingLabel": "1개",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f090",
+   "name": "삼각김밥",
+   "aliases": [
+    "주먹밥",
+    "편의점김밥"
+   ],
+   "category": "분식",
+   "baseAmount": 100,
+   "kcal": 175,
+   "carbs": 33.0,
+   "protein": 4.0,
+   "fat": 2.8,
+   "servingSize": 110,
+   "servingLabel": "1개",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f091",
+   "name": "호떡",
+   "aliases": [
+    "꿀호떡"
+   ],
+   "category": "분식",
+   "baseAmount": 100,
+   "kcal": 280,
+   "carbs": 48.0,
+   "protein": 5.0,
+   "fat": 7.8,
+   "servingSize": 80,
+   "servingLabel": "1개",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f092",
+   "name": "붕어빵",
+   "aliases": [
+    "잉어빵",
+    "팥붕"
+   ],
+   "category": "분식",
+   "baseAmount": 100,
+   "kcal": 220,
+   "carbs": 44.0,
+   "protein": 5.0,
+   "fat": 2.5,
+   "servingSize": 40,
+   "servingLabel": "1개",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f093",
+   "name": "떡꼬치",
+   "aliases": [
+    "떡꼬지"
+   ],
+   "category": "분식",
+   "baseAmount": 100,
+   "kcal": 260,
+   "carbs": 50.0,
+   "protein": 4.0,
+   "fat": 5.0,
+   "servingSize": 80,
+   "servingLabel": "1개",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f094",
+   "name": "닭가슴살(생)",
+   "aliases": [
+    "닭가슴살",
+    "닭고기",
+    "치킨브레스트"
+   ],
+   "category": "육류",
+   "baseAmount": 100,
+   "kcal": 106,
+   "carbs": 0.0,
+   "protein": 23.3,
+   "fat": 1.2,
+   "servingSize": 100,
+   "servingLabel": "1덩이",
+   "source": "농촌진흥청 국가표준식품성분표 참고"
+  },
+  {
+   "id": "f095",
+   "name": "닭가슴살(익힌 것)",
+   "aliases": [
+    "닭가슴살",
+    "삶은닭가슴살",
+    "구운닭가슴살",
+    "닭고기"
+   ],
+   "category": "육류",
+   "baseAmount": 100,
+   "kcal": 165,
+   "carbs": 0.0,
+   "protein": 31.0,
+   "fat": 3.6,
+   "servingSize": 100,
+   "servingLabel": "1덩이",
+   "source": "USDA FoodData Central 참고"
+  },
+  {
+   "id": "f096",
+   "name": "닭다리살(구이)",
+   "aliases": [
+    "닭다리",
+    "닭정육",
+    "닭고기"
+   ],
+   "category": "육류",
+   "baseAmount": 100,
+   "kcal": 210,
+   "carbs": 0.0,
+   "protein": 26.0,
+   "fat": 11.5,
+   "servingSize": 100,
+   "servingLabel": "1회",
+   "source": "USDA FoodData Central 참고"
+  },
+  {
+   "id": "f097",
+   "name": "삼겹살(생)",
+   "aliases": [
+    "삼겹살",
+    "돼지고기",
+    "오겹살"
+   ],
+   "category": "육류",
+   "baseAmount": 100,
+   "kcal": 330,
+   "carbs": 0.0,
+   "protein": 17.2,
+   "fat": 28.7,
+   "servingSize": 200,
+   "servingLabel": "1인분",
+   "source": "농촌진흥청 국가표준식품성분표 참고"
+  },
+  {
+   "id": "f098",
+   "name": "삼겹살(구이)",
+   "aliases": [
+    "삼겹살",
+    "구운삼겹살",
+    "돼지고기"
+   ],
+   "category": "육류",
+   "baseAmount": 100,
+   "kcal": 380,
+   "carbs": 0.0,
+   "protein": 24.0,
+   "fat": 31.0,
+   "servingSize": 150,
+   "servingLabel": "1인분",
+   "source": "USDA FoodData Central 참고"
+  },
+  {
+   "id": "f099",
+   "name": "돼지 목살(생)",
+   "aliases": [
+    "목살",
+    "목심",
+    "돼지고기"
+   ],
+   "category": "육류",
+   "baseAmount": 100,
+   "kcal": 223,
+   "carbs": 0.0,
+   "protein": 17.6,
+   "fat": 16.9,
+   "servingSize": 200,
+   "servingLabel": "1인분",
+   "source": "농촌진흥청 국가표준식품성분표 참고"
+  },
+  {
+   "id": "f100",
+   "name": "돼지 안심(생)",
+   "aliases": [
+    "안심",
+    "돼지고기",
+    "돈안심"
+   ],
+   "category": "육류",
+   "baseAmount": 100,
+   "kcal": 115,
+   "carbs": 0.0,
+   "protein": 22.0,
+   "fat": 2.8,
+   "servingSize": 150,
+   "servingLabel": "1회",
+   "source": "농촌진흥청 국가표준식품성분표 참고"
+  },
+  {
+   "id": "f101",
+   "name": "소고기 등심(생)",
+   "aliases": [
+    "등심",
+    "소고기",
+    "쇠고기",
+    "한우"
+   ],
+   "category": "육류",
+   "baseAmount": 100,
+   "kcal": 260,
+   "carbs": 0.0,
+   "protein": 17.5,
+   "fat": 21.0,
+   "servingSize": 150,
+   "servingLabel": "1인분",
+   "source": "농촌진흥청 국가표준식품성분표 참고"
+  },
+  {
+   "id": "f102",
+   "name": "소고기 안심(생)",
+   "aliases": [
+    "안심",
+    "소고기",
+    "쇠고기",
+    "필레"
+   ],
+   "category": "육류",
+   "baseAmount": 100,
+   "kcal": 190,
+   "carbs": 0.0,
+   "protein": 20.0,
+   "fat": 12.0,
+   "servingSize": 150,
+   "servingLabel": "1인분",
+   "source": "농촌진흥청 국가표준식품성분표 참고"
+  },
+  {
+   "id": "f103",
+   "name": "소고기 우둔(생)",
+   "aliases": [
+    "우둔",
+    "홍두깨",
+    "소고기",
+    "쇠고기"
+   ],
+   "category": "육류",
+   "baseAmount": 100,
+   "kcal": 130,
+   "carbs": 0.0,
+   "protein": 22.0,
+   "fat": 4.5,
+   "servingSize": 150,
+   "servingLabel": "1회",
+   "source": "농촌진흥청 국가표준식품성분표 참고"
+  },
+  {
+   "id": "f104",
+   "name": "소고기 다짐육(생)",
+   "aliases": [
+    "다짐육",
+    "간고기",
+    "소고기",
+    "쇠고기"
+   ],
+   "category": "육류",
+   "baseAmount": 100,
+   "kcal": 230,
+   "carbs": 0.0,
+   "protein": 18.0,
+   "fat": 17.5,
+   "servingSize": 100,
+   "servingLabel": "1회",
+   "source": "농촌진흥청 국가표준식품성분표 참고"
+  },
+  {
+   "id": "f105",
+   "name": "소고기 스테이크(등심 구이)",
+   "aliases": [
+    "스테이크",
+    "소고기",
+    "쇠고기",
+    "등심구이"
+   ],
+   "category": "육류",
+   "baseAmount": 100,
+   "kcal": 290,
+   "carbs": 0.0,
+   "protein": 26.0,
+   "fat": 20.5,
+   "servingSize": 200,
+   "servingLabel": "1인분",
+   "source": "USDA FoodData Central 참고"
+  },
+  {
+   "id": "f106",
+   "name": "훈제오리",
+   "aliases": [
+    "오리고기",
+    "오리",
+    "훈제오리고기"
+   ],
+   "category": "육류",
+   "baseAmount": 100,
+   "kcal": 296,
+   "carbs": 2.0,
+   "protein": 17.0,
+   "fat": 24.5,
+   "servingSize": 100,
+   "servingLabel": "1회",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(가공식품) 대표값 참고"
+  },
+  {
+   "id": "f107",
+   "name": "햄(슬라이스)",
+   "aliases": [
+    "햄",
+    "슬라이스햄",
+    "샌드위치햄"
+   ],
+   "category": "육류",
+   "baseAmount": 100,
+   "kcal": 120,
+   "carbs": 3.0,
+   "protein": 17.0,
+   "fat": 4.5,
+   "servingSize": 30,
+   "servingLabel": "2장",
+   "source": "USDA FoodData Central 참고"
+  },
+  {
+   "id": "f108",
+   "name": "통조림햄",
+   "aliases": [
+    "스팸",
+    "햄",
+    "런천미트"
+   ],
+   "category": "육류",
+   "baseAmount": 100,
+   "kcal": 307,
+   "carbs": 3.0,
+   "protein": 13.0,
+   "fat": 27.0,
+   "servingSize": 50,
+   "servingLabel": "1회",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(가공식품) 대표값 참고"
+  },
+  {
+   "id": "f109",
+   "name": "비엔나소시지",
+   "aliases": [
+    "소시지",
+    "소세지",
+    "비엔나"
+   ],
+   "category": "육류",
+   "baseAmount": 100,
+   "kcal": 300,
+   "carbs": 5.0,
+   "protein": 11.0,
+   "fat": 26.5,
+   "servingSize": 50,
+   "servingLabel": "1회",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(가공식품) 대표값 참고"
+  },
+  {
+   "id": "f110",
+   "name": "베이컨(구운 것)",
+   "aliases": [
+    "베이컨"
+   ],
+   "category": "육류",
+   "baseAmount": 100,
+   "kcal": 500,
+   "carbs": 1.5,
+   "protein": 35.0,
+   "fat": 39.0,
+   "servingSize": 20,
+   "servingLabel": "2줄",
+   "source": "USDA FoodData Central 참고"
+  },
+  {
+   "id": "f111",
+   "name": "연어(생)",
+   "aliases": [
+    "연어",
+    "연어회",
+    "사시미"
+   ],
+   "category": "해산물",
+   "baseAmount": 100,
+   "kcal": 200,
+   "carbs": 0.0,
+   "protein": 20.0,
+   "fat": 13.4,
+   "servingSize": 100,
+   "servingLabel": "1회",
+   "source": "USDA FoodData Central 참고"
+  },
+  {
+   "id": "f112",
+   "name": "훈제연어",
+   "aliases": [
+    "연어",
+    "스모크연어"
+   ],
+   "category": "해산물",
+   "baseAmount": 100,
+   "kcal": 117,
+   "carbs": 0.0,
+   "protein": 18.3,
+   "fat": 4.3,
+   "servingSize": 50,
+   "servingLabel": "1회",
+   "source": "USDA FoodData Central 참고"
+  },
+  {
+   "id": "f113",
+   "name": "고등어(생)",
+   "aliases": [
+    "고등어"
+   ],
+   "category": "해산물",
+   "baseAmount": 100,
+   "kcal": 180,
+   "carbs": 0.0,
+   "protein": 20.0,
+   "fat": 11.0,
+   "servingSize": 100,
+   "servingLabel": "1토막",
+   "source": "농촌진흥청 국가표준식품성분표 참고"
+  },
+  {
+   "id": "f114",
+   "name": "고등어구이",
+   "aliases": [
+    "고등어",
+    "생선구이"
+   ],
+   "category": "해산물",
+   "baseAmount": 100,
+   "kcal": 230,
+   "carbs": 0.0,
+   "protein": 24.0,
+   "fat": 15.0,
+   "servingSize": 100,
+   "servingLabel": "1토막",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f115",
+   "name": "갈치(생)",
+   "aliases": [
+    "갈치",
+    "갈치구이"
+   ],
+   "category": "해산물",
+   "baseAmount": 100,
+   "kcal": 150,
+   "carbs": 0.0,
+   "protein": 18.0,
+   "fat": 8.5,
+   "servingSize": 100,
+   "servingLabel": "1토막",
+   "source": "농촌진흥청 국가표준식품성분표 참고"
+  },
+  {
+   "id": "f116",
+   "name": "참치통조림(기름 뺀 것)",
+   "aliases": [
+    "참치",
+    "참치캔",
+    "참치통조림"
+   ],
+   "category": "해산물",
+   "baseAmount": 100,
+   "kcal": 190,
+   "carbs": 0.0,
+   "protein": 27.0,
+   "fat": 9.0,
+   "servingSize": 100,
+   "servingLabel": "1캔(100g)",
+   "source": "USDA FoodData Central 참고"
+  },
+  {
+   "id": "f117",
+   "name": "참치회(붉은살)",
+   "aliases": [
+    "참치",
+    "참치회",
+    "사시미"
+   ],
+   "category": "해산물",
+   "baseAmount": 100,
+   "kcal": 117,
+   "carbs": 0.0,
+   "protein": 26.0,
+   "fat": 1.5,
+   "servingSize": 100,
+   "servingLabel": "1회",
+   "source": "USDA FoodData Central 참고"
+  },
+  {
+   "id": "f118",
+   "name": "광어회",
+   "aliases": [
+    "광어",
+    "넙치",
+    "회",
+    "사시미"
+   ],
+   "category": "해산물",
+   "baseAmount": 100,
+   "kcal": 105,
+   "carbs": 0.0,
+   "protein": 21.0,
+   "fat": 2.5,
+   "servingSize": 150,
+   "servingLabel": "1인분",
+   "source": "농촌진흥청 국가표준식품성분표 참고"
+  },
+  {
+   "id": "f119",
+   "name": "새우(생)",
+   "aliases": [
+    "새우",
+    "대하",
+    "흰다리새우"
+   ],
+   "category": "해산물",
+   "baseAmount": 100,
+   "kcal": 85,
+   "carbs": 0.2,
+   "protein": 20.0,
+   "fat": 0.5,
+   "servingSize": 100,
+   "servingLabel": "1회",
+   "source": "USDA FoodData Central 참고"
+  },
+  {
+   "id": "f120",
+   "name": "새우(삶은 것)",
+   "aliases": [
+    "새우",
+    "새우찜",
+    "칵테일새우"
+   ],
+   "category": "해산물",
+   "baseAmount": 100,
+   "kcal": 99,
+   "carbs": 0.2,
+   "protein": 24.0,
+   "fat": 0.3,
+   "servingSize": 100,
+   "servingLabel": "1회",
+   "source": "USDA FoodData Central 참고"
+  },
+  {
+   "id": "f121",
+   "name": "오징어(생)",
+   "aliases": [
+    "오징어"
+   ],
+   "category": "해산물",
+   "baseAmount": 100,
+   "kcal": 87,
+   "carbs": 0.8,
+   "protein": 18.0,
+   "fat": 1.2,
+   "servingSize": 100,
+   "servingLabel": "1회",
+   "source": "농촌진흥청 국가표준식품성분표 참고"
+  },
+  {
+   "id": "f122",
+   "name": "굴(생)",
+   "aliases": [
+    "굴",
+    "석화",
+    "생굴"
+   ],
+   "category": "해산물",
+   "baseAmount": 100,
+   "kcal": 72,
+   "carbs": 4.5,
+   "protein": 9.0,
+   "fat": 2.0,
+   "servingSize": 100,
+   "servingLabel": "1회",
+   "source": "농촌진흥청 국가표준식품성분표 참고"
+  },
+  {
+   "id": "f123",
+   "name": "바지락(생)",
+   "aliases": [
+    "바지락",
+    "조개"
+   ],
+   "category": "해산물",
+   "baseAmount": 100,
+   "kcal": 60,
+   "carbs": 3.0,
+   "protein": 10.0,
+   "fat": 0.8,
+   "servingSize": 100,
+   "servingLabel": "1회",
+   "source": "농촌진흥청 국가표준식품성분표 참고"
+  },
+  {
+   "id": "f124",
+   "name": "홍합(생)",
+   "aliases": [
+    "홍합",
+    "조개"
+   ],
+   "category": "해산물",
+   "baseAmount": 100,
+   "kcal": 84,
+   "carbs": 4.0,
+   "protein": 12.0,
+   "fat": 2.2,
+   "servingSize": 100,
+   "servingLabel": "1회",
+   "source": "USDA FoodData Central 참고"
+  },
+  {
+   "id": "f125",
+   "name": "전복(생)",
+   "aliases": [
+    "전복"
+   ],
+   "category": "해산물",
+   "baseAmount": 100,
+   "kcal": 73,
+   "carbs": 3.5,
+   "protein": 13.0,
+   "fat": 0.8,
+   "servingSize": 100,
+   "servingLabel": "2마리",
+   "source": "농촌진흥청 국가표준식품성분표 참고"
+  },
+  {
+   "id": "f126",
+   "name": "게맛살",
+   "aliases": [
+    "크래미",
+    "맛살",
+    "게살"
+   ],
+   "category": "해산물",
+   "baseAmount": 100,
+   "kcal": 93,
+   "carbs": 13.0,
+   "protein": 9.0,
+   "fat": 0.6,
+   "servingSize": 50,
+   "servingLabel": "3개",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(가공식품) 대표값 참고"
+  },
+  {
+   "id": "f127",
+   "name": "명란젓",
+   "aliases": [
+    "명란",
+    "젓갈"
+   ],
+   "category": "해산물",
+   "baseAmount": 100,
+   "kcal": 124,
+   "carbs": 2.0,
+   "protein": 21.0,
+   "fat": 3.5,
+   "servingSize": 20,
+   "servingLabel": "1회",
+   "source": "농촌진흥청 국가표준식품성분표 참고"
+  },
+  {
+   "id": "f128",
+   "name": "라면(건면·스프 포함)",
+   "aliases": [
+    "라면",
+    "봉지라면",
+    "신라면"
+   ],
+   "category": "면류",
+   "baseAmount": 100,
+   "kcal": 440,
+   "carbs": 65.0,
+   "protein": 9.0,
+   "fat": 15.5,
+   "servingSize": 120,
+   "servingLabel": "1봉지",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(가공식품) 대표값 참고"
+  },
+  {
+   "id": "f129",
+   "name": "컵라면(건면·스프 포함)",
+   "aliases": [
+    "컵라면",
+    "라면"
+   ],
+   "category": "면류",
+   "baseAmount": 100,
+   "kcal": 446,
+   "carbs": 62.0,
+   "protein": 9.0,
+   "fat": 18.0,
+   "servingSize": 65,
+   "servingLabel": "1개(소컵)",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(가공식품) 대표값 참고"
+  },
+  {
+   "id": "f130",
+   "name": "짜장면",
+   "aliases": [
+    "자장면",
+    "짜장"
+   ],
+   "category": "면류",
+   "baseAmount": 100,
+   "kcal": 115,
+   "carbs": 19.0,
+   "protein": 3.8,
+   "fat": 2.8,
+   "servingSize": 650,
+   "servingLabel": "1그릇",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f131",
+   "name": "짬뽕",
+   "aliases": [
+    "짬봉"
+   ],
+   "category": "면류",
+   "baseAmount": 100,
+   "kcal": 70,
+   "carbs": 10.0,
+   "protein": 4.0,
+   "fat": 1.6,
+   "servingSize": 900,
+   "servingLabel": "1그릇",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f132",
+   "name": "우동",
+   "aliases": [
+    "가락국수"
+   ],
+   "category": "면류",
+   "baseAmount": 100,
+   "kcal": 77,
+   "carbs": 14.0,
+   "protein": 3.0,
+   "fat": 1.0,
+   "servingSize": 600,
+   "servingLabel": "1그릇",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f133",
+   "name": "칼국수",
+   "aliases": [
+    "바지락칼국수",
+    "국수"
+   ],
+   "category": "면류",
+   "baseAmount": 100,
+   "kcal": 89,
+   "carbs": 16.0,
+   "protein": 3.5,
+   "fat": 1.2,
+   "servingSize": 600,
+   "servingLabel": "1그릇",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f134",
+   "name": "잔치국수",
+   "aliases": [
+    "국수",
+    "멸치국수"
+   ],
+   "category": "면류",
+   "baseAmount": 100,
+   "kcal": 73,
+   "carbs": 14.0,
+   "protein": 2.8,
+   "fat": 0.7,
+   "servingSize": 600,
+   "servingLabel": "1그릇",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f135",
+   "name": "비빔국수",
+   "aliases": [
+    "국수"
+   ],
+   "category": "면류",
+   "baseAmount": 100,
+   "kcal": 142,
+   "carbs": 28.0,
+   "protein": 4.0,
+   "fat": 1.5,
+   "servingSize": 350,
+   "servingLabel": "1그릇",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f136",
+   "name": "물냉면",
+   "aliases": [
+    "냉면"
+   ],
+   "category": "면류",
+   "baseAmount": 100,
+   "kcal": 73,
+   "carbs": 14.0,
+   "protein": 3.0,
+   "fat": 0.6,
+   "servingSize": 800,
+   "servingLabel": "1그릇",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f137",
+   "name": "비빔냉면",
+   "aliases": [
+    "냉면"
+   ],
+   "category": "면류",
+   "baseAmount": 100,
+   "kcal": 123,
+   "carbs": 24.0,
+   "protein": 3.5,
+   "fat": 1.4,
+   "servingSize": 450,
+   "servingLabel": "1그릇",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f138",
+   "name": "쌀국수",
+   "aliases": [
+    "퍼",
+    "베트남쌀국수",
+    "월남쌈국수"
+   ],
+   "category": "면류",
+   "baseAmount": 100,
+   "kcal": 60,
+   "carbs": 9.5,
+   "protein": 3.5,
+   "fat": 0.9,
+   "servingSize": 700,
+   "servingLabel": "1그릇",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f139",
+   "name": "토마토 파스타",
+   "aliases": [
+    "스파게티",
+    "파스타",
+    "토마토스파게티"
+   ],
+   "category": "면류",
+   "baseAmount": 100,
+   "kcal": 130,
+   "carbs": 20.0,
+   "protein": 4.5,
+   "fat": 3.5,
+   "servingSize": 350,
+   "servingLabel": "1접시",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f140",
+   "name": "크림 파스타",
+   "aliases": [
+    "까르보나라",
+    "파스타",
+    "크림스파게티"
+   ],
+   "category": "면류",
+   "baseAmount": 100,
+   "kcal": 192,
+   "carbs": 20.0,
+   "protein": 5.5,
+   "fat": 10.0,
+   "servingSize": 350,
+   "servingLabel": "1접시",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f141",
+   "name": "알리오올리오",
+   "aliases": [
+    "알리오 올리오",
+    "오일파스타",
+    "파스타"
+   ],
+   "category": "면류",
+   "baseAmount": 100,
+   "kcal": 169,
+   "carbs": 22.0,
+   "protein": 4.5,
+   "fat": 7.0,
+   "servingSize": 300,
+   "servingLabel": "1접시",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f142",
+   "name": "파스타면(삶은 것)",
+   "aliases": [
+    "파스타",
+    "스파게티면",
+    "면"
+   ],
+   "category": "면류",
+   "baseAmount": 100,
+   "kcal": 157,
+   "carbs": 31.0,
+   "protein": 5.8,
+   "fat": 0.9,
+   "servingSize": 200,
+   "servingLabel": "1인분",
+   "source": "USDA FoodData Central 참고"
+  },
+  {
+   "id": "f143",
+   "name": "파스타면(건면)",
+   "aliases": [
+    "파스타",
+    "스파게티면",
+    "면"
+   ],
+   "category": "면류",
+   "baseAmount": 100,
+   "kcal": 371,
+   "carbs": 75.0,
+   "protein": 13.0,
+   "fat": 1.5,
+   "servingSize": 100,
+   "servingLabel": "1인분",
+   "source": "USDA FoodData Central 참고"
+  },
+  {
+   "id": "f144",
+   "name": "햄버거",
+   "aliases": [
+    "버거",
+    "불고기버거"
+   ],
+   "category": "패스트푸드",
+   "baseAmount": 100,
+   "kcal": 250,
+   "carbs": 28.0,
+   "protein": 10.0,
+   "fat": 11.0,
+   "servingSize": 220,
+   "servingLabel": "1개",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f145",
+   "name": "치즈버거",
+   "aliases": [
+    "버거",
+    "햄버거"
+   ],
+   "category": "패스트푸드",
+   "baseAmount": 100,
+   "kcal": 260,
+   "carbs": 28.0,
+   "protein": 13.0,
+   "fat": 11.0,
+   "servingSize": 120,
+   "servingLabel": "1개",
+   "source": "USDA FoodData Central 참고"
+  },
+  {
+   "id": "f146",
+   "name": "새우버거",
+   "aliases": [
+    "버거",
+    "햄버거"
+   ],
+   "category": "패스트푸드",
+   "baseAmount": 100,
+   "kcal": 245,
+   "carbs": 30.0,
+   "protein": 8.0,
+   "fat": 10.5,
+   "servingSize": 200,
+   "servingLabel": "1개",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f147",
+   "name": "치즈피자",
+   "aliases": [
+    "피자"
+   ],
+   "category": "패스트푸드",
+   "baseAmount": 100,
+   "kcal": 265,
+   "carbs": 33.0,
+   "protein": 11.0,
+   "fat": 10.0,
+   "servingSize": 130,
+   "servingLabel": "1조각",
+   "source": "USDA FoodData Central 참고"
+  },
+  {
+   "id": "f148",
+   "name": "페퍼로니피자",
+   "aliases": [
+    "피자"
+   ],
+   "category": "패스트푸드",
+   "baseAmount": 100,
+   "kcal": 270,
+   "carbs": 30.0,
+   "protein": 11.5,
+   "fat": 11.5,
+   "servingSize": 130,
+   "servingLabel": "1조각",
+   "source": "USDA FoodData Central 참고"
+  },
+  {
+   "id": "f149",
+   "name": "콤비네이션피자",
+   "aliases": [
+    "피자",
+    "슈프림피자"
+   ],
+   "category": "패스트푸드",
+   "baseAmount": 100,
+   "kcal": 250,
+   "carbs": 28.0,
+   "protein": 11.0,
+   "fat": 10.5,
+   "servingSize": 150,
+   "servingLabel": "1조각",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f150",
+   "name": "후라이드치킨",
+   "aliases": [
+    "치킨",
+    "프라이드치킨",
+    "통닭"
+   ],
+   "category": "패스트푸드",
+   "baseAmount": 100,
+   "kcal": 290,
+   "carbs": 12.0,
+   "protein": 20.0,
+   "fat": 18.0,
+   "servingSize": 200,
+   "servingLabel": "1인분(약 4조각)",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f151",
+   "name": "양념치킨",
+   "aliases": [
+    "치킨"
+   ],
+   "category": "패스트푸드",
+   "baseAmount": 100,
+   "kcal": 300,
+   "carbs": 18.0,
+   "protein": 18.0,
+   "fat": 17.5,
+   "servingSize": 200,
+   "servingLabel": "1인분(약 4조각)",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f152",
+   "name": "닭강정",
+   "aliases": [
+    "치킨"
+   ],
+   "category": "패스트푸드",
+   "baseAmount": 100,
+   "kcal": 290,
+   "carbs": 25.0,
+   "protein": 15.0,
+   "fat": 14.5,
+   "servingSize": 150,
+   "servingLabel": "1컵",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f153",
+   "name": "치킨너겟",
+   "aliases": [
+    "너겟",
+    "너깃",
+    "치킨너깃",
+    "치킨"
+   ],
+   "category": "패스트푸드",
+   "baseAmount": 100,
+   "kcal": 295,
+   "carbs": 16.0,
+   "protein": 15.0,
+   "fat": 19.0,
+   "servingSize": 100,
+   "servingLabel": "6조각",
+   "source": "USDA FoodData Central 참고"
+  },
+  {
+   "id": "f154",
+   "name": "감자튀김",
+   "aliases": [
+    "프렌치프라이",
+    "후렌치후라이",
+    "포테이토"
+   ],
+   "category": "패스트푸드",
+   "baseAmount": 100,
+   "kcal": 315,
+   "carbs": 41.0,
+   "protein": 3.4,
+   "fat": 15.5,
+   "servingSize": 110,
+   "servingLabel": "1봉(M)",
+   "source": "USDA FoodData Central 참고"
+  },
+  {
+   "id": "f155",
+   "name": "햄치즈샌드위치",
+   "aliases": [
+    "샌드위치"
+   ],
+   "category": "패스트푸드",
+   "baseAmount": 100,
+   "kcal": 240,
+   "carbs": 25.0,
+   "protein": 12.0,
+   "fat": 10.0,
+   "servingSize": 180,
+   "servingLabel": "1개",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f156",
+   "name": "사과",
+   "aliases": [],
+   "category": "채소·과일",
+   "baseAmount": 100,
+   "kcal": 52,
+   "carbs": 13.8,
+   "protein": 0.3,
+   "fat": 0.2,
+   "servingSize": 200,
+   "servingLabel": "1개(중)",
+   "source": "농촌진흥청 국가표준식품성분표 참고"
+  },
+  {
+   "id": "f157",
+   "name": "바나나",
+   "aliases": [],
+   "category": "채소·과일",
+   "baseAmount": 100,
+   "kcal": 89,
+   "carbs": 22.8,
+   "protein": 1.1,
+   "fat": 0.3,
+   "servingSize": 120,
+   "servingLabel": "1개",
+   "source": "USDA FoodData Central 참고"
+  },
+  {
+   "id": "f158",
+   "name": "귤",
+   "aliases": [
+    "감귤",
+    "밀감",
+    "귤껍질제외"
+   ],
+   "category": "채소·과일",
+   "baseAmount": 100,
+   "kcal": 42,
+   "carbs": 10.5,
+   "protein": 0.7,
+   "fat": 0.1,
+   "servingSize": 80,
+   "servingLabel": "1개",
+   "source": "농촌진흥청 국가표준식품성분표 참고"
+  },
+  {
+   "id": "f159",
+   "name": "오렌지",
+   "aliases": [],
+   "category": "채소·과일",
+   "baseAmount": 100,
+   "kcal": 47,
+   "carbs": 11.8,
+   "protein": 0.9,
+   "fat": 0.1,
+   "servingSize": 150,
+   "servingLabel": "1개",
+   "source": "USDA FoodData Central 참고"
+  },
+  {
+   "id": "f160",
+   "name": "딸기",
+   "aliases": [],
+   "category": "채소·과일",
+   "baseAmount": 100,
+   "kcal": 34,
+   "carbs": 7.7,
+   "protein": 0.7,
+   "fat": 0.3,
+   "servingSize": 150,
+   "servingLabel": "10알",
+   "source": "농촌진흥청 국가표준식품성분표 참고"
+  },
+  {
+   "id": "f161",
+   "name": "포도",
+   "aliases": [
+    "샤인머스캣"
+   ],
+   "category": "채소·과일",
+   "baseAmount": 100,
+   "kcal": 69,
+   "carbs": 18.0,
+   "protein": 0.7,
+   "fat": 0.2,
+   "servingSize": 150,
+   "servingLabel": "1송이(소)",
+   "source": "USDA FoodData Central 참고"
+  },
+  {
+   "id": "f162",
+   "name": "수박",
+   "aliases": [],
+   "category": "채소·과일",
+   "baseAmount": 100,
+   "kcal": 30,
+   "carbs": 7.6,
+   "protein": 0.6,
+   "fat": 0.2,
+   "servingSize": 300,
+   "servingLabel": "2조각",
+   "source": "USDA FoodData Central 참고"
+  },
+  {
+   "id": "f163",
+   "name": "참외",
+   "aliases": [],
+   "category": "채소·과일",
+   "baseAmount": 100,
+   "kcal": 31,
+   "carbs": 7.5,
+   "protein": 0.8,
+   "fat": 0.1,
+   "servingSize": 200,
+   "servingLabel": "1개(소)",
+   "source": "농촌진흥청 국가표준식품성분표 참고"
+  },
+  {
+   "id": "f164",
+   "name": "배",
+   "aliases": [
+    "신고배"
+   ],
+   "category": "채소·과일",
+   "baseAmount": 100,
+   "kcal": 43,
+   "carbs": 11.0,
+   "protein": 0.3,
+   "fat": 0.1,
+   "servingSize": 250,
+   "servingLabel": "1/2개",
+   "source": "농촌진흥청 국가표준식품성분표 참고"
+  },
+  {
+   "id": "f165",
+   "name": "복숭아",
+   "aliases": [
+    "백도",
+    "황도"
+   ],
+   "category": "채소·과일",
+   "baseAmount": 100,
+   "kcal": 39,
+   "carbs": 9.5,
+   "protein": 0.9,
+   "fat": 0.3,
+   "servingSize": 200,
+   "servingLabel": "1개",
+   "source": "USDA FoodData Central 참고"
+  },
+  {
+   "id": "f166",
+   "name": "키위",
+   "aliases": [
+    "참다래"
+   ],
+   "category": "채소·과일",
+   "baseAmount": 100,
+   "kcal": 61,
+   "carbs": 14.7,
+   "protein": 1.1,
+   "fat": 0.5,
+   "servingSize": 90,
+   "servingLabel": "1개",
+   "source": "USDA FoodData Central 참고"
+  },
+  {
+   "id": "f167",
+   "name": "블루베리",
+   "aliases": [],
+   "category": "채소·과일",
+   "baseAmount": 100,
+   "kcal": 57,
+   "carbs": 14.5,
+   "protein": 0.7,
+   "fat": 0.3,
+   "servingSize": 150,
+   "servingLabel": "1컵",
+   "source": "USDA FoodData Central 참고"
+  },
+  {
+   "id": "f168",
+   "name": "토마토",
+   "aliases": [
+    "방울토마토",
+    "방토"
+   ],
+   "category": "채소·과일",
+   "baseAmount": 100,
+   "kcal": 18,
+   "carbs": 3.9,
+   "protein": 0.9,
+   "fat": 0.2,
+   "servingSize": 150,
+   "servingLabel": "1개",
+   "source": "USDA FoodData Central 참고"
+  },
+  {
+   "id": "f169",
+   "name": "파인애플",
+   "aliases": [],
+   "category": "채소·과일",
+   "baseAmount": 100,
+   "kcal": 50,
+   "carbs": 13.0,
+   "protein": 0.5,
+   "fat": 0.1,
+   "servingSize": 150,
+   "servingLabel": "1회",
+   "source": "USDA FoodData Central 참고"
+  },
+  {
+   "id": "f170",
+   "name": "망고",
+   "aliases": [],
+   "category": "채소·과일",
+   "baseAmount": 100,
+   "kcal": 60,
+   "carbs": 15.0,
+   "protein": 0.8,
+   "fat": 0.4,
+   "servingSize": 150,
+   "servingLabel": "1/2개",
+   "source": "USDA FoodData Central 참고"
+  },
+  {
+   "id": "f171",
+   "name": "아보카도",
+   "aliases": [],
+   "category": "채소·과일",
+   "baseAmount": 100,
+   "kcal": 160,
+   "carbs": 8.5,
+   "protein": 2.0,
+   "fat": 14.7,
+   "servingSize": 70,
+   "servingLabel": "1/2개",
+   "source": "USDA FoodData Central 참고"
+  },
+  {
+   "id": "f172",
+   "name": "자몽",
+   "aliases": [],
+   "category": "채소·과일",
+   "baseAmount": 100,
+   "kcal": 42,
+   "carbs": 10.7,
+   "protein": 0.8,
+   "fat": 0.1,
+   "servingSize": 150,
+   "servingLabel": "1/2개",
+   "source": "USDA FoodData Central 참고"
+  },
+  {
+   "id": "f173",
+   "name": "체리",
+   "aliases": [],
+   "category": "채소·과일",
+   "baseAmount": 100,
+   "kcal": 63,
+   "carbs": 16.0,
+   "protein": 1.1,
+   "fat": 0.2,
+   "servingSize": 100,
+   "servingLabel": "1회",
+   "source": "USDA FoodData Central 참고"
+  },
+  {
+   "id": "f174",
+   "name": "멜론",
+   "aliases": [],
+   "category": "채소·과일",
+   "baseAmount": 100,
+   "kcal": 34,
+   "carbs": 8.2,
+   "protein": 0.8,
+   "fat": 0.2,
+   "servingSize": 200,
+   "servingLabel": "1회",
+   "source": "USDA FoodData Central 참고"
+  },
+  {
+   "id": "f175",
+   "name": "브로콜리(생)",
+   "aliases": [
+    "브로콜리"
+   ],
+   "category": "채소·과일",
+   "baseAmount": 100,
+   "kcal": 34,
+   "carbs": 6.6,
+   "protein": 2.8,
+   "fat": 0.4,
+   "servingSize": 100,
+   "servingLabel": "1회",
+   "source": "USDA FoodData Central 참고"
+  },
+  {
+   "id": "f176",
+   "name": "브로콜리(데친 것)",
+   "aliases": [
+    "브로콜리",
+    "데친브로콜리"
+   ],
+   "category": "채소·과일",
+   "baseAmount": 100,
+   "kcal": 35,
+   "carbs": 7.2,
+   "protein": 2.4,
+   "fat": 0.4,
+   "servingSize": 100,
+   "servingLabel": "1회",
+   "source": "USDA FoodData Central 참고"
+  },
+  {
+   "id": "f177",
+   "name": "고구마(생)",
+   "aliases": [
+    "고구마"
+   ],
+   "category": "채소·과일",
+   "baseAmount": 100,
+   "kcal": 128,
+   "carbs": 31.0,
+   "protein": 1.4,
+   "fat": 0.2,
+   "servingSize": 150,
+   "servingLabel": "1개(중)",
+   "source": "농촌진흥청 국가표준식품성분표 참고"
+  },
+  {
+   "id": "f178",
+   "name": "고구마(찐 것)",
+   "aliases": [
+    "고구마",
+    "찐고구마"
+   ],
+   "category": "채소·과일",
+   "baseAmount": 100,
+   "kcal": 140,
+   "carbs": 33.0,
+   "protein": 1.4,
+   "fat": 0.2,
+   "servingSize": 150,
+   "servingLabel": "1개(중)",
+   "source": "농촌진흥청 국가표준식품성분표 참고"
+  },
+  {
+   "id": "f179",
+   "name": "군고구마",
+   "aliases": [
+    "고구마"
+   ],
+   "category": "채소·과일",
+   "baseAmount": 100,
+   "kcal": 163,
+   "carbs": 39.0,
+   "protein": 1.8,
+   "fat": 0.2,
+   "servingSize": 150,
+   "servingLabel": "1개(중)",
+   "source": "농촌진흥청 국가표준식품성분표 참고"
+  },
+  {
+   "id": "f180",
+   "name": "감자(생)",
+   "aliases": [
+    "감자"
+   ],
+   "category": "채소·과일",
+   "baseAmount": 100,
+   "kcal": 70,
+   "carbs": 16.0,
+   "protein": 2.0,
+   "fat": 0.1,
+   "servingSize": 150,
+   "servingLabel": "1개(중)",
+   "source": "농촌진흥청 국가표준식품성분표 참고"
+  },
+  {
+   "id": "f181",
+   "name": "감자(찐 것)",
+   "aliases": [
+    "감자",
+    "찐감자",
+    "삶은감자"
+   ],
+   "category": "채소·과일",
+   "baseAmount": 100,
+   "kcal": 80,
+   "carbs": 18.5,
+   "protein": 2.0,
+   "fat": 0.1,
+   "servingSize": 150,
+   "servingLabel": "1개(중)",
+   "source": "농촌진흥청 국가표준식품성분표 참고"
+  },
+  {
+   "id": "f182",
+   "name": "단호박(찐 것)",
+   "aliases": [
+    "단호박",
+    "호박"
+   ],
+   "category": "채소·과일",
+   "baseAmount": 100,
+   "kcal": 66,
+   "carbs": 15.0,
+   "protein": 1.6,
+   "fat": 0.2,
+   "servingSize": 150,
+   "servingLabel": "1회",
+   "source": "농촌진흥청 국가표준식품성분표 참고"
+  },
+  {
+   "id": "f183",
+   "name": "양배추(생)",
+   "aliases": [
+    "양배추"
+   ],
+   "category": "채소·과일",
+   "baseAmount": 100,
+   "kcal": 25,
+   "carbs": 5.8,
+   "protein": 1.3,
+   "fat": 0.1,
+   "servingSize": 70,
+   "servingLabel": "1회",
+   "source": "USDA FoodData Central 참고"
+  },
+  {
+   "id": "f184",
+   "name": "양상추",
+   "aliases": [
+    "레터스"
+   ],
+   "category": "채소·과일",
+   "baseAmount": 100,
+   "kcal": 14,
+   "carbs": 2.9,
+   "protein": 1.0,
+   "fat": 0.1,
+   "servingSize": 50,
+   "servingLabel": "1회",
+   "source": "USDA FoodData Central 참고"
+  },
+  {
+   "id": "f185",
+   "name": "상추",
+   "aliases": [
+    "쌈채소"
+   ],
+   "category": "채소·과일",
+   "baseAmount": 100,
+   "kcal": 15,
+   "carbs": 2.9,
+   "protein": 1.4,
+   "fat": 0.2,
+   "servingSize": 50,
+   "servingLabel": "1회",
+   "source": "농촌진흥청 국가표준식품성분표 참고"
+  },
+  {
+   "id": "f186",
+   "name": "오이",
+   "aliases": [],
+   "category": "채소·과일",
+   "baseAmount": 100,
+   "kcal": 15,
+   "carbs": 3.6,
+   "protein": 0.7,
+   "fat": 0.1,
+   "servingSize": 100,
+   "servingLabel": "1/2개",
+   "source": "USDA FoodData Central 참고"
+  },
+  {
+   "id": "f187",
+   "name": "당근",
+   "aliases": [],
+   "category": "채소·과일",
+   "baseAmount": 100,
+   "kcal": 41,
+   "carbs": 9.6,
+   "protein": 0.9,
+   "fat": 0.2,
+   "servingSize": 70,
+   "servingLabel": "1/2개",
+   "source": "USDA FoodData Central 참고"
+  },
+  {
+   "id": "f188",
+   "name": "시금치(생)",
+   "aliases": [
+    "시금치"
+   ],
+   "category": "채소·과일",
+   "baseAmount": 100,
+   "kcal": 23,
+   "carbs": 3.6,
+   "protein": 2.9,
+   "fat": 0.4,
+   "servingSize": 70,
+   "servingLabel": "1회",
+   "source": "USDA FoodData Central 참고"
+  },
+  {
+   "id": "f189",
+   "name": "파프리카",
+   "aliases": [
+    "피망"
+   ],
+   "category": "채소·과일",
+   "baseAmount": 100,
+   "kcal": 26,
+   "carbs": 6.0,
+   "protein": 1.0,
+   "fat": 0.3,
+   "servingSize": 100,
+   "servingLabel": "1/2개",
+   "source": "USDA FoodData Central 참고"
+  },
+  {
+   "id": "f190",
+   "name": "양파",
+   "aliases": [],
+   "category": "채소·과일",
+   "baseAmount": 100,
+   "kcal": 40,
+   "carbs": 9.3,
+   "protein": 1.1,
+   "fat": 0.1,
+   "servingSize": 100,
+   "servingLabel": "1/2개",
+   "source": "USDA FoodData Central 참고"
+  },
+  {
+   "id": "f191",
+   "name": "새송이버섯",
+   "aliases": [
+    "버섯",
+    "새송이"
+   ],
+   "category": "채소·과일",
+   "baseAmount": 100,
+   "kcal": 35,
+   "carbs": 7.0,
+   "protein": 3.0,
+   "fat": 0.3,
+   "servingSize": 100,
+   "servingLabel": "1개",
+   "source": "농촌진흥청 국가표준식품성분표 참고"
+  },
+  {
+   "id": "f192",
+   "name": "채소 샐러드(드레싱 제외)",
+   "aliases": [
+    "샐러드",
+    "그린샐러드"
+   ],
+   "category": "채소·과일",
+   "baseAmount": 100,
+   "kcal": 20,
+   "carbs": 4.0,
+   "protein": 1.3,
+   "fat": 0.2,
+   "servingSize": 150,
+   "servingLabel": "1접시",
+   "source": "USDA FoodData Central 참고"
+  },
+  {
+   "id": "f193",
+   "name": "우유",
+   "aliases": [
+    "흰우유",
+    "일반우유"
+   ],
+   "category": "유제품·계란",
+   "baseAmount": 100,
+   "kcal": 65,
+   "carbs": 5.0,
+   "protein": 3.2,
+   "fat": 3.6,
+   "servingSize": 200,
+   "servingLabel": "1팩(200mL)",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(가공식품) 대표값 참고"
+  },
+  {
+   "id": "f194",
+   "name": "저지방우유",
+   "aliases": [
+    "저지방"
+   ],
+   "category": "유제품·계란",
+   "baseAmount": 100,
+   "kcal": 42,
+   "carbs": 5.0,
+   "protein": 3.3,
+   "fat": 1.0,
+   "servingSize": 200,
+   "servingLabel": "1팩(200mL)",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(가공식품) 대표값 참고"
+  },
+  {
+   "id": "f195",
+   "name": "무지방우유",
+   "aliases": [
+    "무지방",
+    "탈지우유"
+   ],
+   "category": "유제품·계란",
+   "baseAmount": 100,
+   "kcal": 35,
+   "carbs": 5.0,
+   "protein": 3.4,
+   "fat": 0.1,
+   "servingSize": 200,
+   "servingLabel": "1팩(200mL)",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(가공식품) 대표값 참고"
+  },
+  {
+   "id": "f196",
+   "name": "초코우유",
+   "aliases": [
+    "초콜릿우유",
+    "초코렛우유"
+   ],
+   "category": "유제품·계란",
+   "baseAmount": 100,
+   "kcal": 80,
+   "carbs": 11.0,
+   "protein": 2.8,
+   "fat": 2.6,
+   "servingSize": 200,
+   "servingLabel": "1팩(200mL)",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(가공식품) 대표값 참고"
+  },
+  {
+   "id": "f197",
+   "name": "바나나우유",
+   "aliases": [
+    "바나나맛우유"
+   ],
+   "category": "유제품·계란",
+   "baseAmount": 100,
+   "kcal": 87,
+   "carbs": 13.0,
+   "protein": 2.9,
+   "fat": 2.6,
+   "servingSize": 240,
+   "servingLabel": "1개(240mL)",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(가공식품) 대표값 참고"
+  },
+  {
+   "id": "f198",
+   "name": "두유",
+   "aliases": [
+    "콩우유",
+    "베지밀"
+   ],
+   "category": "유제품·계란",
+   "baseAmount": 100,
+   "kcal": 62,
+   "carbs": 6.5,
+   "protein": 3.3,
+   "fat": 2.6,
+   "servingSize": 190,
+   "servingLabel": "1팩(190mL)",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(가공식품) 대표값 참고"
+  },
+  {
+   "id": "f199",
+   "name": "플레인 요거트(무가당)",
+   "aliases": [
+    "요거트",
+    "요구르트",
+    "플레인요거트"
+   ],
+   "category": "유제품·계란",
+   "baseAmount": 100,
+   "kcal": 61,
+   "carbs": 4.7,
+   "protein": 3.5,
+   "fat": 3.3,
+   "servingSize": 100,
+   "servingLabel": "1컵",
+   "source": "USDA FoodData Central 참고"
+  },
+  {
+   "id": "f200",
+   "name": "그릭요거트(무가당)",
+   "aliases": [
+    "요거트",
+    "그릭요거트",
+    "그릭"
+   ],
+   "category": "유제품·계란",
+   "baseAmount": 100,
+   "kcal": 97,
+   "carbs": 4.0,
+   "protein": 9.0,
+   "fat": 5.0,
+   "servingSize": 100,
+   "servingLabel": "1컵",
+   "source": "USDA FoodData Central 참고"
+  },
+  {
+   "id": "f201",
+   "name": "떠먹는 요거트(가당)",
+   "aliases": [
+    "요거트",
+    "요구르트",
+    "요플레",
+    "떠먹는요거트"
+   ],
+   "category": "유제품·계란",
+   "baseAmount": 100,
+   "kcal": 91,
+   "carbs": 14.0,
+   "protein": 3.5,
+   "fat": 2.3,
+   "servingSize": 85,
+   "servingLabel": "1개",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(가공식품) 대표값 참고"
+  },
+  {
+   "id": "f202",
+   "name": "발효유(소용량 요구르트)",
+   "aliases": [
+    "요구르트",
+    "야쿠르트"
+   ],
+   "category": "유제품·계란",
+   "baseAmount": 100,
+   "kcal": 75,
+   "carbs": 17.0,
+   "protein": 1.0,
+   "fat": 0.1,
+   "servingSize": 65,
+   "servingLabel": "1병",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(가공식품) 대표값 참고"
+  },
+  {
+   "id": "f203",
+   "name": "슬라이스치즈",
+   "aliases": [
+    "치즈",
+    "체다슬라이스"
+   ],
+   "category": "유제품·계란",
+   "baseAmount": 100,
+   "kcal": 300,
+   "carbs": 7.0,
+   "protein": 17.0,
+   "fat": 23.0,
+   "servingSize": 18,
+   "servingLabel": "1장",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(가공식품) 대표값 참고"
+  },
+  {
+   "id": "f204",
+   "name": "모짜렐라치즈",
+   "aliases": [
+    "치즈",
+    "모짜렐라",
+    "모차렐라",
+    "모차렐라치즈"
+   ],
+   "category": "유제품·계란",
+   "baseAmount": 100,
+   "kcal": 300,
+   "carbs": 2.2,
+   "protein": 22.0,
+   "fat": 22.0,
+   "servingSize": 30,
+   "servingLabel": "1회",
+   "source": "USDA FoodData Central 참고"
+  },
+  {
+   "id": "f205",
+   "name": "체다치즈",
+   "aliases": [
+    "치즈",
+    "체다"
+   ],
+   "category": "유제품·계란",
+   "baseAmount": 100,
+   "kcal": 403,
+   "carbs": 1.3,
+   "protein": 25.0,
+   "fat": 33.0,
+   "servingSize": 20,
+   "servingLabel": "1회",
+   "source": "USDA FoodData Central 참고"
+  },
+  {
+   "id": "f206",
+   "name": "크림치즈",
+   "aliases": [
+    "치즈"
+   ],
+   "category": "유제품·계란",
+   "baseAmount": 100,
+   "kcal": 342,
+   "carbs": 4.0,
+   "protein": 6.0,
+   "fat": 34.0,
+   "servingSize": 20,
+   "servingLabel": "1회",
+   "source": "USDA FoodData Central 참고"
+  },
+  {
+   "id": "f207",
+   "name": "삶은 달걀",
+   "aliases": [
+    "계란",
+    "달걀",
+    "삶은계란",
+    "삶은달걀",
+    "구운계란",
+    "구운달걀",
+    "맥반석계란",
+    "에그"
+   ],
+   "category": "유제품·계란",
+   "baseAmount": 100,
+   "kcal": 155,
+   "carbs": 1.1,
+   "protein": 12.6,
+   "fat": 10.6,
+   "servingSize": 50,
+   "servingLabel": "1개",
+   "source": "USDA FoodData Central 참고"
+  },
+  {
+   "id": "f208",
+   "name": "달걀(생)",
+   "aliases": [
+    "계란",
+    "달걀",
+    "생계란",
+    "생달걀",
+    "날계란",
+    "날달걀"
+   ],
+   "category": "유제품·계란",
+   "baseAmount": 100,
+   "kcal": 143,
+   "carbs": 0.7,
+   "protein": 12.6,
+   "fat": 9.5,
+   "servingSize": 50,
+   "servingLabel": "1개",
+   "source": "USDA FoodData Central 참고"
+  },
+  {
+   "id": "f209",
+   "name": "달걀프라이",
+   "aliases": [
+    "계란",
+    "달걀",
+    "계란후라이",
+    "계란프라이",
+    "달걀후라이",
+    "에그프라이"
+   ],
+   "category": "유제품·계란",
+   "baseAmount": 100,
+   "kcal": 196,
+   "carbs": 0.8,
+   "protein": 13.6,
+   "fat": 15.0,
+   "servingSize": 46,
+   "servingLabel": "1개",
+   "source": "USDA FoodData Central 참고"
+  },
+  {
+   "id": "f210",
+   "name": "달걀흰자(삶은 것)",
+   "aliases": [
+    "계란흰자",
+    "흰자",
+    "달걀",
+    "계란"
+   ],
+   "category": "유제품·계란",
+   "baseAmount": 100,
+   "kcal": 52,
+   "carbs": 0.7,
+   "protein": 11.0,
+   "fat": 0.2,
+   "servingSize": 33,
+   "servingLabel": "1개분",
+   "source": "USDA FoodData Central 참고"
+  },
+  {
+   "id": "f211",
+   "name": "메추리알(삶은 것)",
+   "aliases": [
+    "메추리알",
+    "메추리알장조림"
+   ],
+   "category": "유제품·계란",
+   "baseAmount": 100,
+   "kcal": 158,
+   "carbs": 0.4,
+   "protein": 13.0,
+   "fat": 11.0,
+   "servingSize": 30,
+   "servingLabel": "3개",
+   "source": "USDA FoodData Central 참고"
+  },
+  {
+   "id": "f212",
+   "name": "버터",
+   "aliases": [],
+   "category": "유제품·계란",
+   "baseAmount": 100,
+   "kcal": 717,
+   "carbs": 0.1,
+   "protein": 0.9,
+   "fat": 81.0,
+   "servingSize": 10,
+   "servingLabel": "1회",
+   "source": "USDA FoodData Central 참고"
+  },
+  {
+   "id": "f213",
+   "name": "식빵",
+   "aliases": [
+    "빵",
+    "흰식빵",
+    "토스트"
+   ],
+   "category": "빵·간식",
+   "baseAmount": 100,
+   "kcal": 266,
+   "carbs": 49.0,
+   "protein": 9.0,
+   "fat": 3.3,
+   "servingSize": 35,
+   "servingLabel": "1장",
+   "source": "USDA FoodData Central 참고"
+  },
+  {
+   "id": "f214",
+   "name": "통밀식빵",
+   "aliases": [
+    "빵",
+    "통밀빵",
+    "호밀빵"
+   ],
+   "category": "빵·간식",
+   "baseAmount": 100,
+   "kcal": 250,
+   "carbs": 43.0,
+   "protein": 12.0,
+   "fat": 3.5,
+   "servingSize": 35,
+   "servingLabel": "1장",
+   "source": "USDA FoodData Central 참고"
+  },
+  {
+   "id": "f215",
+   "name": "베이글",
+   "aliases": [
+    "빵",
+    "플레인베이글"
+   ],
+   "category": "빵·간식",
+   "baseAmount": 100,
+   "kcal": 257,
+   "carbs": 50.5,
+   "protein": 10.0,
+   "fat": 1.6,
+   "servingSize": 100,
+   "servingLabel": "1개",
+   "source": "USDA FoodData Central 참고"
+  },
+  {
+   "id": "f216",
+   "name": "크루아상",
+   "aliases": [
+    "빵",
+    "크로와상",
+    "크로아상"
+   ],
+   "category": "빵·간식",
+   "baseAmount": 100,
+   "kcal": 406,
+   "carbs": 46.0,
+   "protein": 8.0,
+   "fat": 21.0,
+   "servingSize": 60,
+   "servingLabel": "1개",
+   "source": "USDA FoodData Central 참고"
+  },
+  {
+   "id": "f217",
+   "name": "바게트",
+   "aliases": [
+    "빵",
+    "프랑스빵",
+    "바게뜨"
+   ],
+   "category": "빵·간식",
+   "baseAmount": 100,
+   "kcal": 270,
+   "carbs": 54.0,
+   "protein": 10.0,
+   "fat": 1.5,
+   "servingSize": 60,
+   "servingLabel": "1조각",
+   "source": "USDA FoodData Central 참고"
+  },
+  {
+   "id": "f218",
+   "name": "단팥빵",
+   "aliases": [
+    "빵",
+    "팥빵"
+   ],
+   "category": "빵·간식",
+   "baseAmount": 100,
+   "kcal": 270,
+   "carbs": 50.0,
+   "protein": 7.0,
+   "fat": 4.5,
+   "servingSize": 100,
+   "servingLabel": "1개",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f219",
+   "name": "소보로빵",
+   "aliases": [
+    "빵",
+    "곰보빵"
+   ],
+   "category": "빵·간식",
+   "baseAmount": 100,
+   "kcal": 380,
+   "carbs": 55.0,
+   "protein": 8.0,
+   "fat": 14.0,
+   "servingSize": 100,
+   "servingLabel": "1개",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f220",
+   "name": "크림빵",
+   "aliases": [
+    "빵",
+    "슈크림빵"
+   ],
+   "category": "빵·간식",
+   "baseAmount": 100,
+   "kcal": 300,
+   "carbs": 45.0,
+   "protein": 7.0,
+   "fat": 10.0,
+   "servingSize": 100,
+   "servingLabel": "1개",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f221",
+   "name": "도넛",
+   "aliases": [
+    "도너츠",
+    "도나쓰",
+    "도너스"
+   ],
+   "category": "빵·간식",
+   "baseAmount": 100,
+   "kcal": 420,
+   "carbs": 50.0,
+   "protein": 5.0,
+   "fat": 22.0,
+   "servingSize": 60,
+   "servingLabel": "1개",
+   "source": "USDA FoodData Central 참고"
+  },
+  {
+   "id": "f222",
+   "name": "블루베리 머핀",
+   "aliases": [
+    "머핀",
+    "빵"
+   ],
+   "category": "빵·간식",
+   "baseAmount": 100,
+   "kcal": 377,
+   "carbs": 54.0,
+   "protein": 4.4,
+   "fat": 16.0,
+   "servingSize": 110,
+   "servingLabel": "1개",
+   "source": "USDA FoodData Central 참고"
+  },
+  {
+   "id": "f223",
+   "name": "카스텔라",
+   "aliases": [
+    "빵",
+    "카스테라"
+   ],
+   "category": "빵·간식",
+   "baseAmount": 100,
+   "kcal": 316,
+   "carbs": 55.0,
+   "protein": 7.0,
+   "fat": 7.5,
+   "servingSize": 50,
+   "servingLabel": "1조각",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f224",
+   "name": "생크림케이크",
+   "aliases": [
+    "케이크",
+    "케잌"
+   ],
+   "category": "빵·간식",
+   "baseAmount": 100,
+   "kcal": 330,
+   "carbs": 40.0,
+   "protein": 4.5,
+   "fat": 17.0,
+   "servingSize": 100,
+   "servingLabel": "1조각",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f225",
+   "name": "치즈케이크",
+   "aliases": [
+    "케이크",
+    "케잌"
+   ],
+   "category": "빵·간식",
+   "baseAmount": 100,
+   "kcal": 321,
+   "carbs": 25.5,
+   "protein": 5.5,
+   "fat": 22.5,
+   "servingSize": 100,
+   "servingLabel": "1조각",
+   "source": "USDA FoodData Central 참고"
+  },
+  {
+   "id": "f226",
+   "name": "초코칩쿠키",
+   "aliases": [
+    "쿠키",
+    "과자"
+   ],
+   "category": "빵·간식",
+   "baseAmount": 100,
+   "kcal": 490,
+   "carbs": 64.0,
+   "protein": 5.0,
+   "fat": 24.0,
+   "servingSize": 30,
+   "servingLabel": "2개",
+   "source": "USDA FoodData Central 참고"
+  },
+  {
+   "id": "f227",
+   "name": "밀크초콜릿",
+   "aliases": [
+    "초콜릿",
+    "초코렛",
+    "초콜렛",
+    "초코"
+   ],
+   "category": "빵·간식",
+   "baseAmount": 100,
+   "kcal": 535,
+   "carbs": 59.0,
+   "protein": 7.6,
+   "fat": 30.0,
+   "servingSize": 30,
+   "servingLabel": "1회",
+   "source": "USDA FoodData Central 참고"
+  },
+  {
+   "id": "f228",
+   "name": "다크초콜릿(70%)",
+   "aliases": [
+    "초콜릿",
+    "다크초콜릿",
+    "초콜렛",
+    "초코"
+   ],
+   "category": "빵·간식",
+   "baseAmount": 100,
+   "kcal": 600,
+   "carbs": 46.0,
+   "protein": 7.8,
+   "fat": 43.0,
+   "servingSize": 20,
+   "servingLabel": "1회",
+   "source": "USDA FoodData Central 참고"
+  },
+  {
+   "id": "f229",
+   "name": "감자칩",
+   "aliases": [
+    "과자",
+    "포테이토칩",
+    "스낵"
+   ],
+   "category": "빵·간식",
+   "baseAmount": 100,
+   "kcal": 540,
+   "carbs": 53.0,
+   "protein": 7.0,
+   "fat": 34.6,
+   "servingSize": 30,
+   "servingLabel": "1회",
+   "source": "USDA FoodData Central 참고"
+  },
+  {
+   "id": "f230",
+   "name": "새우맛 과자",
+   "aliases": [
+    "과자",
+    "스낵",
+    "새우과자",
+    "새우깡"
+   ],
+   "category": "빵·간식",
+   "baseAmount": 100,
+   "kcal": 490,
+   "carbs": 67.0,
+   "protein": 6.0,
+   "fat": 22.0,
+   "servingSize": 30,
+   "servingLabel": "1회",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(가공식품) 대표값 참고"
+  },
+  {
+   "id": "f231",
+   "name": "크래커",
+   "aliases": [
+    "과자",
+    "비스킷"
+   ],
+   "category": "빵·간식",
+   "baseAmount": 100,
+   "kcal": 478,
+   "carbs": 68.0,
+   "protein": 8.0,
+   "fat": 19.0,
+   "servingSize": 30,
+   "servingLabel": "1회",
+   "source": "USDA FoodData Central 참고"
+  },
+  {
+   "id": "f232",
+   "name": "젤리",
+   "aliases": [
+    "구미"
+   ],
+   "category": "빵·간식",
+   "baseAmount": 100,
+   "kcal": 334,
+   "carbs": 77.0,
+   "protein": 6.5,
+   "fat": 0.0,
+   "servingSize": 50,
+   "servingLabel": "1봉(소)",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(가공식품) 대표값 참고"
+  },
+  {
+   "id": "f233",
+   "name": "사탕",
+   "aliases": [
+    "캔디"
+   ],
+   "category": "빵·간식",
+   "baseAmount": 100,
+   "kcal": 388,
+   "carbs": 97.0,
+   "protein": 0.0,
+   "fat": 0.2,
+   "servingSize": 10,
+   "servingLabel": "2개",
+   "source": "USDA FoodData Central 참고"
+  },
+  {
+   "id": "f234",
+   "name": "약과",
+   "aliases": [
+    "한과",
+    "전통과자"
+   ],
+   "category": "빵·간식",
+   "baseAmount": 100,
+   "kcal": 429,
+   "carbs": 66.0,
+   "protein": 4.0,
+   "fat": 16.5,
+   "servingSize": 40,
+   "servingLabel": "1개",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(음식) 대표값 참고"
+  },
+  {
+   "id": "f235",
+   "name": "양갱",
+   "aliases": [
+    "연양갱"
+   ],
+   "category": "빵·간식",
+   "baseAmount": 100,
+   "kcal": 296,
+   "carbs": 70.0,
+   "protein": 3.5,
+   "fat": 0.2,
+   "servingSize": 50,
+   "servingLabel": "1개",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(가공식품) 대표값 참고"
+  },
+  {
+   "id": "f236",
+   "name": "시리얼바",
+   "aliases": [
+    "에너지바",
+    "곡물바"
+   ],
+   "category": "빵·간식",
+   "baseAmount": 100,
+   "kcal": 403,
+   "carbs": 70.0,
+   "protein": 6.0,
+   "fat": 11.0,
+   "servingSize": 25,
+   "servingLabel": "1개",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(가공식품) 대표값 참고"
+  },
+  {
+   "id": "f237",
+   "name": "바닐라 아이스크림",
+   "aliases": [
+    "아이스크림",
+    "아이스"
+   ],
+   "category": "빵·간식",
+   "baseAmount": 100,
+   "kcal": 207,
+   "carbs": 24.0,
+   "protein": 3.5,
+   "fat": 11.0,
+   "servingSize": 100,
+   "servingLabel": "1컵",
+   "source": "USDA FoodData Central 참고"
+  },
+  {
+   "id": "f238",
+   "name": "아메리카노",
+   "aliases": [
+    "커피",
+    "블랙커피",
+    "콜드브루",
+    "아이스아메리카노",
+    "아아"
+   ],
+   "category": "음료",
+   "baseAmount": 100,
+   "kcal": 4,
+   "carbs": 0.6,
+   "protein": 0.3,
+   "fat": 0.0,
+   "servingSize": 355,
+   "servingLabel": "1잔(Tall)",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(가공식품) 대표값 참고"
+  },
+  {
+   "id": "f239",
+   "name": "카페라떼",
+   "aliases": [
+    "라떼",
+    "카페라테",
+    "라테",
+    "커피",
+    "우유커피"
+   ],
+   "category": "음료",
+   "baseAmount": 100,
+   "kcal": 51,
+   "carbs": 4.2,
+   "protein": 2.8,
+   "fat": 2.6,
+   "servingSize": 355,
+   "servingLabel": "1잔(Tall)",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(가공식품) 대표값 참고"
+  },
+  {
+   "id": "f240",
+   "name": "바닐라라떼",
+   "aliases": [
+    "라떼",
+    "바닐라라테",
+    "커피"
+   ],
+   "category": "음료",
+   "baseAmount": 100,
+   "kcal": 69,
+   "carbs": 9.0,
+   "protein": 2.5,
+   "fat": 2.6,
+   "servingSize": 355,
+   "servingLabel": "1잔(Tall)",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(가공식품) 대표값 참고"
+  },
+  {
+   "id": "f241",
+   "name": "카페모카",
+   "aliases": [
+    "모카",
+    "커피"
+   ],
+   "category": "음료",
+   "baseAmount": 100,
+   "kcal": 84,
+   "carbs": 11.0,
+   "protein": 2.8,
+   "fat": 3.4,
+   "servingSize": 355,
+   "servingLabel": "1잔(Tall)",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(가공식품) 대표값 참고"
+  },
+  {
+   "id": "f242",
+   "name": "녹차(우린 것)",
+   "aliases": [
+    "녹차",
+    "차"
+   ],
+   "category": "음료",
+   "baseAmount": 100,
+   "kcal": 1,
+   "carbs": 0.2,
+   "protein": 0.0,
+   "fat": 0.0,
+   "servingSize": 200,
+   "servingLabel": "1잔",
+   "source": "USDA FoodData Central 참고"
+  },
+  {
+   "id": "f243",
+   "name": "코코아(우유)",
+   "aliases": [
+    "핫초코",
+    "코코아"
+   ],
+   "category": "음료",
+   "baseAmount": 100,
+   "kcal": 79,
+   "carbs": 11.0,
+   "protein": 3.5,
+   "fat": 2.3,
+   "servingSize": 250,
+   "servingLabel": "1잔",
+   "source": "USDA FoodData Central 참고"
+  },
+  {
+   "id": "f244",
+   "name": "오렌지주스(100%)",
+   "aliases": [
+    "주스",
+    "쥬스",
+    "오렌지쥬스"
+   ],
+   "category": "음료",
+   "baseAmount": 100,
+   "kcal": 45,
+   "carbs": 10.4,
+   "protein": 0.7,
+   "fat": 0.2,
+   "servingSize": 200,
+   "servingLabel": "1잔",
+   "source": "USDA FoodData Central 참고"
+  },
+  {
+   "id": "f245",
+   "name": "사과주스(100%)",
+   "aliases": [
+    "주스",
+    "쥬스",
+    "사과쥬스"
+   ],
+   "category": "음료",
+   "baseAmount": 100,
+   "kcal": 46,
+   "carbs": 11.3,
+   "protein": 0.1,
+   "fat": 0.1,
+   "servingSize": 200,
+   "servingLabel": "1잔",
+   "source": "USDA FoodData Central 참고"
+  },
+  {
+   "id": "f246",
+   "name": "콜라",
+   "aliases": [
+    "탄산음료",
+    "코카콜라",
+    "펩시"
+   ],
+   "category": "음료",
+   "baseAmount": 100,
+   "kcal": 42,
+   "carbs": 10.6,
+   "protein": 0.0,
+   "fat": 0.0,
+   "servingSize": 250,
+   "servingLabel": "1캔(250mL)",
+   "source": "USDA FoodData Central 참고"
+  },
+  {
+   "id": "f247",
+   "name": "제로콜라",
+   "aliases": [
+    "콜라제로",
+    "코크제로",
+    "펩시제로",
+    "탄산음료",
+    "제로"
+   ],
+   "category": "음료",
+   "baseAmount": 100,
+   "kcal": 0,
+   "carbs": 0.0,
+   "protein": 0.0,
+   "fat": 0.0,
+   "servingSize": 250,
+   "servingLabel": "1캔(250mL)",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(가공식품) 대표값 참고"
+  },
+  {
+   "id": "f248",
+   "name": "사이다",
+   "aliases": [
+    "탄산음료",
+    "칠성사이다",
+    "스프라이트"
+   ],
+   "category": "음료",
+   "baseAmount": 100,
+   "kcal": 42,
+   "carbs": 10.5,
+   "protein": 0.0,
+   "fat": 0.0,
+   "servingSize": 250,
+   "servingLabel": "1캔(250mL)",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(가공식품) 대표값 참고"
+  },
+  {
+   "id": "f249",
+   "name": "이온음료",
+   "aliases": [
+    "스포츠음료",
+    "포카리",
+    "게토레이"
+   ],
+   "category": "음료",
+   "baseAmount": 100,
+   "kcal": 25,
+   "carbs": 6.2,
+   "protein": 0.0,
+   "fat": 0.0,
+   "servingSize": 500,
+   "servingLabel": "1병(500mL)",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(가공식품) 대표값 참고"
+  },
+  {
+   "id": "f250",
+   "name": "식혜",
+   "aliases": [
+    "감주",
+    "비락식혜"
+   ],
+   "category": "음료",
+   "baseAmount": 100,
+   "kcal": 50,
+   "carbs": 12.3,
+   "protein": 0.3,
+   "fat": 0.0,
+   "servingSize": 240,
+   "servingLabel": "1캔",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(가공식품) 대표값 참고"
+  },
+  {
+   "id": "f251",
+   "name": "맥주",
+   "aliases": [
+    "비어",
+    "생맥주"
+   ],
+   "category": "음료",
+   "baseAmount": 100,
+   "kcal": 43,
+   "carbs": 3.6,
+   "protein": 0.5,
+   "fat": 0.0,
+   "servingSize": 500,
+   "servingLabel": "1잔(500mL)",
+   "source": "USDA FoodData Central 참고"
+  },
+  {
+   "id": "f252",
+   "name": "소주",
+   "aliases": [
+    "술"
+   ],
+   "category": "음료",
+   "baseAmount": 100,
+   "kcal": 95,
+   "carbs": 0.0,
+   "protein": 0.0,
+   "fat": 0.0,
+   "servingSize": 360,
+   "servingLabel": "1병",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(가공식품) 대표값 참고"
+  },
+  {
+   "id": "f253",
+   "name": "막걸리",
+   "aliases": [
+    "탁주",
+    "술"
+   ],
+   "category": "음료",
+   "baseAmount": 100,
+   "kcal": 46,
+   "carbs": 1.8,
+   "protein": 1.6,
+   "fat": 0.1,
+   "servingSize": 750,
+   "servingLabel": "1병",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(가공식품) 대표값 참고"
+  },
+  {
+   "id": "f254",
+   "name": "레드와인",
+   "aliases": [
+    "와인",
+    "포도주",
+    "술"
+   ],
+   "category": "음료",
+   "baseAmount": 100,
+   "kcal": 83,
+   "carbs": 2.6,
+   "protein": 0.1,
+   "fat": 0.0,
+   "servingSize": 150,
+   "servingLabel": "1잔",
+   "source": "USDA FoodData Central 참고"
+  },
+  {
+   "id": "f255",
+   "name": "유청 단백질 파우더",
+   "aliases": [
+    "프로틴",
+    "단백질쉐이크",
+    "단백질셰이크",
+    "프로틴쉐이크",
+    "단백질파우더",
+    "프로틴파우더",
+    "웨이프로틴",
+    "보충제"
+   ],
+   "category": "운동·건강식",
+   "baseAmount": 100,
+   "kcal": 386,
+   "carbs": 8.0,
+   "protein": 75.0,
+   "fat": 6.0,
+   "servingSize": 30,
+   "servingLabel": "1스쿱",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(가공식품) 대표값 참고"
+  },
+  {
+   "id": "f256",
+   "name": "프로틴바",
+   "aliases": [
+    "단백질바",
+    "프로틴"
+   ],
+   "category": "운동·건강식",
+   "baseAmount": 100,
+   "kcal": 370,
+   "carbs": 40.0,
+   "protein": 30.0,
+   "fat": 11.0,
+   "servingSize": 50,
+   "servingLabel": "1개",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(가공식품) 대표값 참고"
+  },
+  {
+   "id": "f257",
+   "name": "훈제 닭가슴살",
+   "aliases": [
+    "닭가슴살",
+    "가공닭가슴살",
+    "닭가슴살소시지"
+   ],
+   "category": "운동·건강식",
+   "baseAmount": 100,
+   "kcal": 118,
+   "carbs": 3.0,
+   "protein": 22.0,
+   "fat": 2.0,
+   "servingSize": 100,
+   "servingLabel": "1팩",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(가공식품) 대표값 참고"
+  },
+  {
+   "id": "f258",
+   "name": "두부",
+   "aliases": [
+    "부침두부",
+    "찌개두부"
+   ],
+   "category": "운동·건강식",
+   "baseAmount": 100,
+   "kcal": 89,
+   "carbs": 2.0,
+   "protein": 9.6,
+   "fat": 5.0,
+   "servingSize": 150,
+   "servingLabel": "1/2모",
+   "source": "농촌진흥청 국가표준식품성분표 참고"
+  },
+  {
+   "id": "f259",
+   "name": "연두부",
+   "aliases": [
+    "순두부",
+    "연한두부"
+   ],
+   "category": "운동·건강식",
+   "baseAmount": 100,
+   "kcal": 50,
+   "carbs": 2.0,
+   "protein": 4.8,
+   "fat": 2.6,
+   "servingSize": 150,
+   "servingLabel": "1팩",
+   "source": "농촌진흥청 국가표준식품성분표 참고"
+  },
+  {
+   "id": "f260",
+   "name": "낫토",
+   "aliases": [
+    "낫또"
+   ],
+   "category": "운동·건강식",
+   "baseAmount": 100,
+   "kcal": 211,
+   "carbs": 12.7,
+   "protein": 19.4,
+   "fat": 11.0,
+   "servingSize": 50,
+   "servingLabel": "1팩",
+   "source": "USDA FoodData Central 참고"
+  },
+  {
+   "id": "f261",
+   "name": "아몬드",
+   "aliases": [
+    "견과류"
+   ],
+   "category": "운동·건강식",
+   "baseAmount": 100,
+   "kcal": 579,
+   "carbs": 21.6,
+   "protein": 21.0,
+   "fat": 50.0,
+   "servingSize": 25,
+   "servingLabel": "1줌",
+   "source": "USDA FoodData Central 참고"
+  },
+  {
+   "id": "f262",
+   "name": "호두",
+   "aliases": [
+    "견과류"
+   ],
+   "category": "운동·건강식",
+   "baseAmount": 100,
+   "kcal": 654,
+   "carbs": 13.7,
+   "protein": 15.2,
+   "fat": 65.0,
+   "servingSize": 15,
+   "servingLabel": "1줌",
+   "source": "USDA FoodData Central 참고"
+  },
+  {
+   "id": "f263",
+   "name": "땅콩",
+   "aliases": [
+    "견과류",
+    "피넛"
+   ],
+   "category": "운동·건강식",
+   "baseAmount": 100,
+   "kcal": 567,
+   "carbs": 16.0,
+   "protein": 26.0,
+   "fat": 49.0,
+   "servingSize": 20,
+   "servingLabel": "1줌",
+   "source": "USDA FoodData Central 참고"
+  },
+  {
+   "id": "f264",
+   "name": "캐슈넛",
+   "aliases": [
+    "견과류",
+    "캐슈",
+    "캐슈너트"
+   ],
+   "category": "운동·건강식",
+   "baseAmount": 100,
+   "kcal": 553,
+   "carbs": 30.0,
+   "protein": 18.0,
+   "fat": 44.0,
+   "servingSize": 20,
+   "servingLabel": "1줌",
+   "source": "USDA FoodData Central 참고"
+  },
+  {
+   "id": "f265",
+   "name": "하루견과(믹스넛)",
+   "aliases": [
+    "견과류",
+    "믹스넛",
+    "하루견과"
+   ],
+   "category": "운동·건강식",
+   "baseAmount": 100,
+   "kcal": 600,
+   "carbs": 20.0,
+   "protein": 17.0,
+   "fat": 52.0,
+   "servingSize": 25,
+   "servingLabel": "1봉",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(가공식품) 대표값 참고"
+  },
+  {
+   "id": "f266",
+   "name": "땅콩버터",
+   "aliases": [
+    "피넛버터"
+   ],
+   "category": "운동·건강식",
+   "baseAmount": 100,
+   "kcal": 588,
+   "carbs": 20.0,
+   "protein": 25.0,
+   "fat": 50.0,
+   "servingSize": 15,
+   "servingLabel": "1큰술",
+   "source": "USDA FoodData Central 참고"
+  },
+  {
+   "id": "f267",
+   "name": "치아씨드",
+   "aliases": [
+    "치아시드",
+    "씨앗"
+   ],
+   "category": "운동·건강식",
+   "baseAmount": 100,
+   "kcal": 486,
+   "carbs": 42.0,
+   "protein": 16.5,
+   "fat": 31.0,
+   "servingSize": 10,
+   "servingLabel": "1큰술",
+   "source": "USDA FoodData Central 참고"
+  },
+  {
+   "id": "f268",
+   "name": "아몬드 음료(무가당)",
+   "aliases": [
+    "아몬드우유",
+    "아몬드브리즈"
+   ],
+   "category": "운동·건강식",
+   "baseAmount": 100,
+   "kcal": 15,
+   "carbs": 0.6,
+   "protein": 0.5,
+   "fat": 1.1,
+   "servingSize": 190,
+   "servingLabel": "1팩(190mL)",
+   "source": "식품의약품안전처 식품영양성분 데이터베이스(가공식품) 대표값 참고"
+  }
+ ]
+}
