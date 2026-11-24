@@ -69,7 +69,7 @@ diet-tracker/
 
 스크립트는 `storage.js` → `nutrition.js` → `search.js` → `recommend.js` → `app.js` 순서로 불러옵니다.
 
-> CSS·JS를 수정해 다시 배포할 때는 `index.html`의 `?v=2`를 `?v=3`처럼 올려 브라우저가 예전 파일을 캐시로 쓰지 않게 하세요.
+> CSS·JS를 수정해 다시 배포할 때는 `index.html`의 `?v=3`을 `?v=4`처럼 올려 브라우저가 예전 파일을 캐시로 쓰지 않게 하세요.
 
 ## 로컬 실행
 

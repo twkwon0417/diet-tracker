@@ -146,26 +146,85 @@
     return rec.foodIds.map((id) => state.foodMap.get(id)).filter(Boolean);
   }
 
+  // 코치 요청 상태: 마지막 요청 번호, 마지막으로 분석한 기록의 서명, 마지막 결과
+  const coach = { req: 0, sig: null, rec: null, stepTimer: null, typeTimer: null };
+  const COACH_STEPS = ['오늘 기록을 불러오는 중', '영양 균형을 분석하는 중', '목표와 비교하는 중', '어울리는 메뉴를 고르는 중'];
+  const reduceMotion = () => window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  function clearCoachTimers() {
+    clearInterval(coach.stepTimer);
+    clearInterval(coach.typeTimer);
+  }
+
+  /** 기록·목표가 바뀌었을 때만 새로 "요청"하고, 그동안 대기 모션을 보여준다. */
   function renderCoach() {
     const el = $('#coach');
     if (!el) return;
     if (Recommend.hasError()) { el.hidden = true; return; }
-    if (!Recommend.isReady() || !state.dbLoaded) {
-      el.hidden = false;
-      el.innerHTML = `<div class="coach-head"><span class="coach-badge">${icon('spark')}AI 식단 코치</span></div><p class="coach-msg muted">오늘 기록을 분석하고 있어요…</p>`;
-      return;
-    }
-    const rec = currentRecommendation();
-    if (!rec) { el.hidden = true; return; }
     el.hidden = false;
+    if (!Recommend.isReady() || !state.dbLoaded) { paintCoachLoading(el); return; }
+
+    const log = Nutrition.buildDailyLog(state.date, Storage.getDay(state.date), Storage.getGoals());
+    const sig = JSON.stringify([state.date, log.totals, log.goals, log.meals.map((m) => m.items.length)]);
+    if (sig === coach.sig && coach.rec) { paintCoach(el, coach.rec, false); return; }
+    if (sig === coach.sig) return; // 같은 요청이 이미 진행 중
+
+    coach.sig = sig;
+    coach.rec = null;
+    const id = ++coach.req;
+    paintCoachLoading(el);
+    Promise.resolve(Recommend.fetchRecommendation(log))
+      .then((rec) => {
+        if (id !== coach.req) return; // 더 최신 요청이 있으면 무시
+        coach.rec = rec;
+        if (rec) paintCoach(el, rec, true); else el.hidden = true;
+      })
+      .catch((e) => {
+        console.error(e);
+        if (id !== coach.req) return;
+        clearCoachTimers();
+        coach.sig = null;
+        el.innerHTML = `<div class="coach-head"><span class="coach-badge">${icon('spark')}AI 식단 코치</span></div><p class="coach-msg muted">추천을 불러오지 못했어요. 잠시 후 다시 시도해 주세요.</p>`;
+      });
+  }
+
+  function paintCoachLoading(el) {
+    clearCoachTimers();
+    el.classList.add('is-loading');
+    el.setAttribute('aria-busy', 'true');
+    el.innerHTML = `
+      <div class="coach-head">
+        <span class="coach-badge">${icon('spark')}AI 식단 코치</span>
+        <span class="coach-status"><span class="typing-dots" aria-hidden="true"><i></i><i></i><i></i></span><span id="coach-step">${COACH_STEPS[0]}</span></span>
+      </div>
+      <div class="sk sk-title"></div>
+      <div class="sk sk-line"></div>
+      <div class="sk sk-line short"></div>
+      <div class="coach-foods sk-grid">${'<div class="sk sk-tile"></div>'.repeat(4)}</div>
+      <p class="coach-note">AI가 오늘 식단을 분석하고 있어요…</p>`;
+    let i = 0;
+    coach.stepTimer = setInterval(() => {
+      const s = $('#coach-step');
+      if (!s) return clearInterval(coach.stepTimer);
+      i = Math.min(i + 1, COACH_STEPS.length - 1);
+      s.textContent = COACH_STEPS[i];
+    }, 420);
+  }
+
+  function paintCoach(el, rec, animate) {
+    clearCoachTimers();
+    el.classList.remove('is-loading');
+    el.removeAttribute('aria-busy');
     const foods = coachFoods(rec).slice(0, 4);
+    const typing = animate && !reduceMotion();
     el.innerHTML = `
       <div class="coach-head">
         <span class="coach-badge">${icon('spark')}AI 식단 코치</span>
         <button class="text-btn small" data-action="coach">자세히</button>
       </div>
+      <div class="${animate ? 'coach-reveal' : ''}">
       <h3 class="coach-headline">${esc(rec.headline)}</h3>
-      <p class="coach-msg">${esc(rec.message)}</p>
+      <p class="coach-msg" id="coach-msg">${typing ? '<span class="caret"></span>' : esc(rec.message)}</p>
       ${foods.length ? `
         <div class="coach-sub">${esc(rec.mealLabel)} 추천 메뉴 <small>· 누르면 ${MEAL_LABEL[rec.targetMeal]}에 추가</small></div>
         <ul class="coach-foods">${foods.map((f) => `
@@ -174,7 +233,19 @@
             <span class="cf-meta">${esc(f.servingLabel || '1회')} · ${fmtKcal(servingNutrition(f).kcal)}kcal</span>
           </button></li>`).join('')}
         </ul>` : ''}
-      <p class="coach-note">예시 응답 · 실제 AI는 연결되어 있지 않습니다</p>`;
+      <p class="coach-note">예시 응답 · 실제 AI는 연결되어 있지 않습니다</p>
+      </div>`;
+    if (typing) {
+      // 응답 메시지가 스트리밍되듯 몇 글자씩 표시
+      const msgEl = $('#coach-msg');
+      const text = rec.message;
+      let n = 0;
+      coach.typeTimer = setInterval(() => {
+        n = Math.min(text.length, n + 3);
+        msgEl.innerHTML = `${esc(text.slice(0, n))}${n < text.length ? '<span class="caret"></span>' : ''}`;
+        if (n >= text.length) clearInterval(coach.typeTimer);
+      }, 24);
+    }
   }
 
   function addFromCoach(foodId, fromDetail) {

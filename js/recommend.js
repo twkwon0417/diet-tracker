@@ -92,9 +92,20 @@ const Recommend = (() => {
     };
   }
 
+  /**
+   * 비동기 추천 요청. 지금은 실제 API 대신 0.9~1.8초 지연 후 미리 작성된 응답을 돌려준다.
+   * 향후 AI API 연동 시 이 함수 안을 fetch('/api/...') 호출로 바꾸면 된다.
+   */
+  function fetchRecommendation(log) {
+    const rec = getRecommendation(log);
+    const delay = 900 + Math.random() * 900;
+    return new Promise((resolve) => setTimeout(() => resolve(rec), delay));
+  }
+
   return {
     load,
     getRecommendation,
+    fetchRecommendation,
     isReady: () => !!data,
     hasError: () => !!loadError,
     SLOT_LABEL,
