@@ -92,6 +92,7 @@
       back: '<path d="M15 18l-6-6 6-6"/>',
       calendar: '<rect x="3.5" y="5" width="17" height="15" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/>',
       chevron: '<path d="M9 18l6-6-6-6"/>',
+      spark: '<path d="M12 3l1.8 4.7L18.5 9.5l-4.7 1.8L12 16l-1.8-4.7L5.5 9.5l4.7-1.8z"/><path d="M18.5 15.5l.8 2 2 .8-2 .8-.8 2-.8-2-2-.8 2-.8z"/>',
     };
     return `<svg class="icon icon-${name}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${paths[name]}</svg>`;
   }
@@ -119,6 +120,7 @@
       state.dbError = '음식 데이터를 불러오지 못했습니다. 파일을 직접 열었다면 로컬 웹 서버로 실행하세요 (README 참고). 직접 등록한 음식은 사용할 수 있습니다.';
     }
     rebuildFoods();
+    renderCoach();
     if (sheet.isOpen() && sheet.refresh) sheet.refresh();
   }
 
@@ -127,6 +129,100 @@
     renderHeader();
     renderSummary();
     renderMeals();
+    renderCoach();
+  }
+
+  // ---------------- AI 식단 코치 (예시 응답) ----------------
+  function currentRecommendation() {
+    const log = Nutrition.buildDailyLog(state.date, Storage.getDay(state.date), Storage.getGoals());
+    return Recommend.getRecommendation(log);
+  }
+
+  function servingNutrition(food) {
+    return Nutrition.calc(perOf(food), food.servingSize > 0 ? food.servingSize : food.baseAmount);
+  }
+
+  function coachFoods(rec) {
+    return rec.foodIds.map((id) => state.foodMap.get(id)).filter(Boolean);
+  }
+
+  function renderCoach() {
+    const el = $('#coach');
+    if (!el) return;
+    if (Recommend.hasError()) { el.hidden = true; return; }
+    if (!Recommend.isReady() || !state.dbLoaded) {
+      el.hidden = false;
+      el.innerHTML = `<div class="coach-head"><span class="coach-badge">${icon('spark')}AI 식단 코치</span></div><p class="coach-msg muted">오늘 기록을 분석하고 있어요…</p>`;
+      return;
+    }
+    const rec = currentRecommendation();
+    if (!rec) { el.hidden = true; return; }
+    el.hidden = false;
+    const foods = coachFoods(rec).slice(0, 4);
+    el.innerHTML = `
+      <div class="coach-head">
+        <span class="coach-badge">${icon('spark')}AI 식단 코치</span>
+        <button class="text-btn small" data-action="coach">자세히</button>
+      </div>
+      <h3 class="coach-headline">${esc(rec.headline)}</h3>
+      <p class="coach-msg">${esc(rec.message)}</p>
+      ${foods.length ? `
+        <div class="coach-sub">${esc(rec.mealLabel)} 추천 메뉴 <small>· 누르면 ${MEAL_LABEL[rec.targetMeal]}에 추가</small></div>
+        <ul class="coach-foods">${foods.map((f) => `
+          <li><button class="coach-food" data-action="coach-add" data-food="${esc(f.id)}">
+            <span class="cf-name">${esc(f.name)}</span>
+            <span class="cf-meta">${esc(f.servingLabel || '1회')} · ${fmtKcal(servingNutrition(f).kcal)}kcal</span>
+          </button></li>`).join('')}
+        </ul>` : ''}
+      <p class="coach-note">예시 응답 · 실제 AI는 연결되어 있지 않습니다</p>`;
+  }
+
+  function addFromCoach(foodId, fromDetail) {
+    const rec = currentRecommendation();
+    const food = state.foodMap.get(foodId);
+    if (!rec || !food) return;
+    openAmount({ mode: 'add', meal: rec.targetMeal, food, onBack: fromDetail ? openCoach : sheet.close });
+  }
+
+  function openCoach() {
+    const rec = currentRecommendation();
+    if (!rec) return;
+    const r = rec.energyRatio;
+    const hasData = r.carbs + r.protein + r.fat > 0;
+    const foods = coachFoods(rec);
+    sheet.show(`
+      ${sheetHeader('AI 식단 코치')}
+      <div class="coach-detail">
+        <span class="coach-badge">${icon('spark')}${esc(rec.mealLabel)} 추천</span>
+        <h3 class="coach-headline big">${esc(rec.headline)}</h3>
+        <p class="coach-msg full">${esc(rec.message)}</p>
+        ${hasData ? `
+        <div class="ratio">
+          <div class="ratio-title">오늘 열량 구성 <small>권장 예시 탄 50 · 단 20 · 지 30</small></div>
+          <div class="ratio-bar">
+            <span class="c-carbs" style="width:${r.carbs}%"></span><span class="c-protein" style="width:${r.protein}%"></span><span class="c-fat" style="width:${r.fat}%"></span>
+          </div>
+          <div class="ratio-legend">
+            <span><i class="dot c-carbs"></i>탄수화물 ${fmtNum(r.carbs, 0)}%</span>
+            <span><i class="dot c-protein"></i>단백질 ${fmtNum(r.protein, 0)}%</span>
+            <span><i class="dot c-fat"></i>지방 ${fmtNum(r.fat, 0)}%</span>
+          </div>
+        </div>` : ''}
+        ${rec.tips.length ? `<h4>코치의 팁</h4><ol class="coach-tips">${rec.tips.map((x) => `<li>${esc(x)}</li>`).join('')}</ol>` : ''}
+        ${foods.length ? `<h4>${esc(rec.mealLabel)} 추천 메뉴 <small>누르면 ${MEAL_LABEL[rec.targetMeal]}에 추가</small></h4>
+        <ul class="food-list coach-list">${foods.map((f) => {
+          const n = servingNutrition(f);
+          return `<li class="food-row"><button class="food-select" data-coach-food="${esc(f.id)}">
+            <span class="food-main"><span class="food-name">${esc(f.name)}</span>
+            <span class="food-meta">${esc(f.servingLabel || '1회')} ${fmtNum(f.servingSize, 0)}g · 탄 ${fmtNum(n.carbs)} · 단 ${fmtNum(n.protein)} · 지 ${fmtNum(n.fat)}g</span></span>
+            <span class="food-kcal">${fmtKcal(n.kcal)}<small> kcal</small></span>
+          </button><span class="add-mini" aria-hidden="true">${icon('plus')}</span></li>`;
+        }).join('')}</ul>` : ''}
+        <p class="source-note">${esc(rec.disclaimer)}<br>향후 AI API를 연결하면 같은 자리에 실제 분석 결과가 표시됩니다.</p>
+      </div>
+    `, { label: 'AI 식단 코치', refresh: openCoach });
+    wireSheetNav();
+    $$('[data-coach-food]', $('#sheet-content')).forEach((b) => b.addEventListener('click', () => addFromCoach(b.dataset.coachFood, true)));
   }
 
   function renderHeader() {
@@ -436,7 +532,7 @@
         <button class="btn btn-primary" id="btn-save">${mode === 'add' ? '추가하기' : '저장'}</button>
       </div>
     `, { label: '섭취량 입력' });
-    wireSheetNav(() => openSearch(meal, true));
+    wireSheetNav(opts.onBack || (() => openSearch(meal, true)));
 
     const input = $('#amount-input');
 
@@ -902,6 +998,8 @@
       const a = t.dataset.action;
       if (a === 'add') openSearch(t.dataset.meal);
       else if (a === 'goals') openGoals();
+      else if (a === 'coach') openCoach();
+      else if (a === 'coach-add') addFromCoach(t.dataset.food, false);
       else if (a === 'edit-entry') {
         const entry = Storage.getDay(state.date)[t.dataset.meal].find((e) => e.id === t.dataset.id);
         if (entry) openAmount({ mode: 'edit', meal: t.dataset.meal, entry });
@@ -953,4 +1051,5 @@
   rebuildFoods();
   render();
   loadFoods();
+  Recommend.load().then(renderCoach);
 })();
